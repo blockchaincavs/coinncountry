@@ -1,0 +1,121 @@
+---
+// One page per story. The address comes from the story's "slug" in its JSON file.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroMedia from '../../components/HeroMedia.astro';
+import StoryBlock from '../../components/StoryBlock.astro';
+import FollowButtons from '../../components/FollowButtons.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { getSite, getAllStories, getTopics } from '../../lib/stories.js';
+import { readMinutes, shortDate } from '../../lib/format.js';
+import { storyJsonLd } from '../../lib/seo.js';
+
+const { slug } = Astro.params;
+const [site, stories, topics] = await Promise.all([getSite(), getAllStories(), getTopics()]);
+const story = stories.find((s) => s.slug === slug);
+if (!story) return Astro.rewrite('/404');
+
+const minutes = readMinutes(story);
+const youtubeUrl = story.links?.youtubeVideoId ? `https://www.youtube.com/watch?v=${story.links.youtubeVideoId}` : undefined;
+const xUrl = story.links?.xPostUrl || undefined;
+const readNext = stories.filter((s) => s.slug !== story.slug).slice(0, 2);
+const isDev = import.meta.env.DEV;
+// Ads between chapters: after chapter 1 and after chapter 3 (if the story is that long).
+const adAfter = new Set([0, 2].filter((i) => i < story.chapters.length - 1));
+---
+<BaseLayout
+  site={site}
+  topics={topics}
+  title={story.seoTitle || story.title}
+  description={story.description}
+  image={story.cover.src}
+  type="article"
+  publishedAt={story.publishedAt}
+  updatedAt={story.updatedAt}
+  jsonLd={storyJsonLd(story, site, Astro.site)}
+>
+  <article class="story">
+    <header class="story__head">
+      <span class="label label--red"><a href={`/topics/${story.topic.slug}`} style="color:inherit">{story.topic.name}</a> · {minutes} min read</span>
+      <h1 class="story__title">{story.title}</h1>
+      <p class="story__dek">{story.dek}</p>
+      <p class="label story__byline">
+        By {site.name} · Published <time datetime={story.publishedAt}>{shortDate(story.publishedAt)}</time>
+        {story.updatedAt && story.updatedAt !== story.publishedAt && <> · Updated <time datetime={story.updatedAt}>{shortDate(story.updatedAt)}</time></>}
+        {story.factCheckedAt && <> · <a href="#sources">Fact-checked {shortDate(story.factCheckedAt)}</a></>}
+      </p>
+    </header>
+
+    <HeroMedia story={story} />
+
+    <div class="story__grid">
+      <aside class="story__aside" aria-label="About this story">
+        <span class="aside__title">In this story</span>
+        <ol class="aside__toc">
+          {story.chapters.map((c, i) => <li><a href={`#${c.id}`}>{i + 1} · {c.title}</a></li>)}
+        </ol>
+        {story.timeline?.length > 0 && (
+          <>
+            <span class="aside__title">On the timeline</span>
+            <ul class="aside__timeline">
+              {story.timeline.map((t) => <li><b>{t.year}</b> · {t.label}</li>)}
+            </ul>
+          </>
+        )}
+        <span class="aside__title">Follow the story</span>
+        <FollowButtons site={site} youtubeUrl={youtubeUrl} xUrl={xUrl} />
+        <AdSlot site={site} size="skyscraper" />
+      </aside>
+
+      <div class="story__body">
+        {story.keyFacts?.length > 0 && (
+          <section class="key-facts" aria-label="Key facts">
+            <span class="label label--green">Key facts</span>
+            <ul>{story.keyFacts.map((f) => <li>{f}</li>)}</ul>
+          </section>
+        )}
+
+        {story.chapters.map((chapter, ci) => (
+          <>
+            <h2 id={chapter.id}>{ci + 1} · {chapter.title}</h2>
+            {chapter.blocks.map((block, bi) => <StoryBlock block={block} dropCap={ci === 0 && bi === 0} />)}
+            {adAfter.has(ci) && <AdSlot site={site} size="in-article" label={`In-article ad slot · after chapter ${ci + 1}`} />}
+          </>
+        ))}
+
+        {story.note && <p class="story-note">{story.note}</p>}
+
+        {story.yourTake ? (
+          <div class="your-take">
+            <span class="label label--red">Our take</span>
+            <p style="margin:6px 0 0">{story.yourTake}</p>
+          </div>
+        ) : isDev && (
+          <div class="your-take your-take--empty">
+            <span class="label label--red">Your take (only you see this, while running locally)</span>
+            <p style="margin:6px 0 0">Add a line or two in your own words to "yourTake" in this story's JSON file. Visitors only see this box once it has text.</p>
+          </div>
+        )}
+      </div>
+    </div>
+
+    <section class="story__end">
+      <div class="sources" id="sources">
+        <h2>Sources</h2>
+        <p>Every fact in this story was checked against these sources on {shortDate(story.factCheckedAt || story.updatedAt)}. Lines that start with "maybe" are just our own guesses.</p>
+        <ol>
+          {story.sources.map((s) => (
+            <li><a href={s.url} target="_blank" rel="noopener">{s.title}</a>, {s.publisher}</li>
+          ))}
+        </ol>
+        <p><em>How we make our stories: researched and fact-checked by {site.name}, with AI tools helping with drafting, art and narration. <a href="/about">More about our process</a>.</em></p>
+      </div>
+      <div class="read-next">
+        <span class="label" style="font-weight:700">Read next</span>
+        {readNext.map((s) => <a class="read-next__link" href={`/stories/${s.slug}`}>{s.title}</a>)}
+        <FollowButtons site={site} />
+      </div>
+    </section>
+
+    <AdSlot site={site} size="billboard" label="Ad slot · 970×90 end of story" />
+  </article>
+</BaseLayout>

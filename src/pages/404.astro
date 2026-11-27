@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSite, getTopics } from '../lib/stories.js';
+const [site, topics] = await Promise.all([getSite(), getTopics()]);
+Astro.response.status = 404;
+---
+<BaseLayout site={site} topics={topics} title="Page not found" description="This page doesn't exist." noindex>
+  <header class="page-head">
+    <span class="label label--red">404</span>
+    <h1>Lost to history</h1>
+    <p>This page doesn't exist. Try the <a href="/">front page</a> or <a href="/stories">all stories</a>.</p>
+  </header>
+</BaseLayout>

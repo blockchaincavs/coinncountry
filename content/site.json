@@ -1,0 +1,9 @@
+{
+  "name": "CoinNCountry",
+  "tagline": "The stories behind the money, the deals, and the headlines.",
+  "description": "Fact-checked American and economic history stories, told in a few minutes each, with videos on YouTube and threads on X.",
+  "logo": "/media/logo.png",
+  "youtube": { "url": "https://www.youtube.com/@CoinNCountry", "handle": "@CoinNCountry" },
+  "x": { "url": "https://x.com/CoinNCountry", "handle": "@CoinNCountry" },
+  "showAdPlaceholders": true
+}

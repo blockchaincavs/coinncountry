@@ -1,0 +1,17 @@
+---
+// One place for every ad on the site.
+// Today it shows a dashed placeholder box (turn off with "showAdPlaceholders": false in content/site.json).
+// When AdSense is approved, its ad code goes in here once, and every slot on every page gets it.
+// size: 'leaderboard' (728x90) | 'billboard' (970x90) | 'rectangle' (300x250) | 'skyscraper' (300x600) | 'in-article'
+const { site, size, label } = Astro.props;
+const names = {
+  leaderboard: 'Ad slot · 728×90 leaderboard',
+  billboard: 'Ad slot · 970×90',
+  rectangle: 'Ad slot · 300×250',
+  skyscraper: 'Ad slot · 300×600 sidebar',
+  'in-article': 'In-article ad slot',
+};
+---
+{site.showAdPlaceholders && (
+  <div class={`ad-slot ad-slot--${size}`} aria-hidden="true">{label || names[size]}</div>
+)}

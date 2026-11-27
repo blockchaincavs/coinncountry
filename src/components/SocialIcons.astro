@@ -1,0 +1,10 @@
+---
+// The two small round YouTube and X buttons (top bar and footer).
+import Icons from './Icons.astro';
+const { site } = Astro.props;
+---
+<span class="icon-links">
+  <a class="icon-btn icon-btn--yt" href={site.youtube.url} aria-label={`${site.name} on YouTube`} rel="me noopener" target="_blank"><Icons name="play" /></a>
+  <a class="icon-btn icon-btn--x" href={site.x.url} aria-label={`${site.name} on X`} rel="me noopener" target="_blank"><Icons name="x" color="#efe4cc" /></a>
+  <slot />
+</span>

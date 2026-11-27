@@ -1,0 +1,13 @@
+---
+// Small inline icons used by the social buttons. name: 'play' | 'x' | 'arrow'
+const { name, size = 12, color = '#fff', stroke = 3 } = Astro.props;
+---
+{name === 'play' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill={color} /></svg>
+)}
+{name === 'x' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke={color} stroke-width={stroke} stroke-linecap="round" /></svg>
+)}
+{name === 'arrow' && (
+  <svg class="pill__arrow" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+)}

@@ -1,0 +1,12 @@
+---
+import SocialIcons from './SocialIcons.astro';
+const { site } = Astro.props;
+---
+<footer class="site-footer">
+  <span>© {new Date().getFullYear()} {site.name}</span>
+  <span class="site-footer__links">
+    <SocialIcons site={site} />
+    <a href="/stories">All stories</a>
+    <a href="/about">How we make our stories</a>
+  </span>
+</footer>

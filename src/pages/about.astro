@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FollowButtons from '../components/FollowButtons.astro';
+import { getSite, getTopics } from '../lib/stories.js';
+
+const [site, topics] = await Promise.all([getSite(), getTopics()]);
+---
+<BaseLayout site={site} topics={topics} title="About and how we make our stories" description={`How ${site.name} researches, fact-checks and makes its history stories.`}>
+  <header class="page-head">
+    <span class="label label--red">About</span>
+    <h1>How we make our stories</h1>
+    <p>{site.tagline}</p>
+  </header>
+  <div class="prose">
+    <p>{site.name} tells short, surprising stories from American and economic history: bubbles and crashes, money, presidents, and the history behind today's tech and finance headlines. Each story also comes as a YouTube video or Short and a post on X.</p>
+
+    <h2>Researched and fact-checked</h2>
+    <p>Every fact in a story is checked against published sources before it goes up, and those sources are listed at the bottom of each story with the date we checked them. When we guess at why someone did something, we say so plainly, usually with a "maybe."</p>
+
+    <h2>Made with help from AI tools</h2>
+    <p>We use AI tools to help with drafting, illustrations and video narration. The research, the fact checking, the angle of each story and the final say are ours.</p>
+
+    <h2>Not financial advice</h2>
+    <p>Stories about money, markets and crypto are history, not investment advice.</p>
+
+    <h2>Follow along</h2>
+    <FollowButtons site={site} />
+  </div>
+</BaseLayout>

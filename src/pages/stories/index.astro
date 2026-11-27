@@ -1,0 +1,20 @@
+---
+// All stories, newest first.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { getSite, getAllStories, getTopics } from '../../lib/stories.js';
+
+const [site, stories, topics] = await Promise.all([getSite(), getAllStories(), getTopics()]);
+---
+<BaseLayout site={site} topics={topics} title="All stories" description={`Every ${site.name} story: fact-checked American and economic history, newest first.`}>
+  <header class="page-head">
+    <span class="label label--red">{stories.length} {stories.length === 1 ? 'story' : 'stories'}</span>
+    <h1>All stories</h1>
+    <p>{site.tagline}</p>
+  </header>
+  <div class="story-list">
+    {stories.map((s) => <StoryCard story={s} headingLevel={2} />)}
+  </div>
+  <AdSlot site={site} size="billboard" />
+</BaseLayout>

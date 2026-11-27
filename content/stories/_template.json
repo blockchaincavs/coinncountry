@@ -1,0 +1,53 @@
+{
+  "slug": "my-new-story",
+  "status": "draft",
+  "featured": false,
+  "title": "The headline readers see on the page",
+  "seoTitle": "Shorter title for Google (60 characters or fewer)",
+  "description": "One or two sentences for Google and link previews (160 characters or fewer).",
+  "dek": "The italic line under the headline.",
+  "summary": "The text on the homepage card. Two or three sentences.",
+  "topic": { "name": "Booms & Busts", "slug": "booms-and-busts" },
+  "publishedAt": "2026-12-01",
+  "updatedAt": "2026-12-01",
+  "factCheckedAt": "2026-12-01",
+  "note": "",
+  "cover": {
+    "src": "/media/my-new-story/cover.jpg",
+    "alt": "Describe the picture for people who can't see it",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    { "title": "Title of a Short", "cover": "/media/my-new-story/short01.jpg", "youtubeId": "" }
+  ],
+  "keyFacts": [
+    "One plain, checked fact per line."
+  ],
+  "timeline": [
+    { "year": 1900, "label": "What happened that year", "home": true, "image": "" }
+  ],
+  "chapters": [
+    {
+      "id": "first-chapter",
+      "title": "The first chapter",
+      "blocks": [
+        { "type": "p", "text": "A paragraph." },
+        { "type": "quote", "text": "A big pull quote." },
+        {
+          "type": "thenNow",
+          "then": { "label": "Then · 1900", "text": "What it was like then." },
+          "now": { "label": "Now · 2026", "text": "A dated, fact-checked line about today." }
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    { "title": "Article title", "publisher": "Who published it", "url": "https://example.com/article" }
+  ]
+}

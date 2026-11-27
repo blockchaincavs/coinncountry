@@ -1,0 +1,124 @@
+{
+  "slug": "ai-history-fakes-fears-crashes",
+  "status": "published",
+  "title": "AI's 250-year history of fakes, fears and crashes",
+  "seoTitle": "AI History: 250 Years of Fakes, Fears and Crashes",
+  "description": "A chess robot with a man inside, machine-breaking Luddites, two AI winters and the chatbot that scared its creator. AI's history, fact-checked and sourced.",
+  "dek": "A chess robot with a man inside. Workers smashing machines. Two crashes called winters. And a chatbot that scared the man who built it. We've been here before.",
+  "summary": "The Mechanical Turk, unveiled in 1770, had a human chess player hidden inside. Since then, AI has been faked, feared, hyped and frozen, more than once. Sound familiar?",
+  "topic": { "name": "AI & Tech", "slug": "ai-and-tech" },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "note": "This story mentions spending plans and markets. It's history, not investment advice. Figures marked with a date can change fast.",
+  "cover": {
+    "src": "/media/ai-history-fakes-fears-crashes/cover.jpg",
+    "alt": "Illustration of the Mechanical Turk chess automaton, with a human player hidden inside its cabinet",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    { "title": "The 1770 chess robot was a human", "cover": "/media/ai-history-fakes-fears-crashes/short14.jpg", "youtubeId": "" },
+    { "title": "AI has crashed twice before", "cover": "/media/ai-history-fakes-fears-crashes/short15.jpg", "youtubeId": "" },
+    { "title": "The Luddites weren't against technology", "cover": "/media/ai-history-fakes-fears-crashes/short16.jpg", "youtubeId": "" },
+    { "title": "The first chatbot scared its creator", "cover": "/media/ai-history-fakes-fears-crashes/short17.jpg", "youtubeId": "" }
+  ],
+  "keyFacts": [
+    "The Mechanical Turk, a chess-playing \"automaton\" built in 1770, hid a human chess player inside its cabinet.",
+    "The Luddites, starting in Nottinghamshire in 1811, smashed machines used to cut wages and make shoddy goods, not all machines.",
+    "A 1955 proposal for a summer workshop is credited with naming the field \"artificial intelligence.\"",
+    "ELIZA, an MIT chatbot from the mid-1960s, convinced its creator's secretary to ask him to leave the room so she could talk to it in private.",
+    "AI research went through two funding collapses, now called AI winters: after reports in 1966 and 1973, and after the AI machine market crashed in 1987."
+  ],
+  "timeline": [
+    { "year": 1770, "label": "The chess robot that was a human", "home": true },
+    { "year": 1811, "label": "The Luddites start smashing machines", "home": true, "image": "/media/ai-history-fakes-fears-crashes/timeline-luddites.jpg" },
+    { "year": 1955, "label": "A proposal names \"artificial intelligence\"" },
+    { "year": 1966, "label": "The first chatbot scares its creator", "home": true, "image": "/media/ai-history-fakes-fears-crashes/timeline-eliza.jpg" },
+    { "year": 1987, "label": "AI's second winter" }
+  ],
+  "chapters": [
+    {
+      "id": "turk",
+      "title": "The chess robot was a man in a box",
+      "blocks": [
+        { "type": "p", "text": "In 1770, Wolfgang von Kempelen built a machine to impress Empress Maria Theresa: a carved figure called the Turk, seated at a cabinet full of gears. Before each game, he opened the cabinet doors and showed off the clockwork. Then he closed them, and the Turk played chess." },
+        { "type": "p", "text": "It toured for about 84 years. It reportedly played Benjamin Franklin in Paris. In 1809 it played Napoleon, who gave up after nineteen moves. In 1836, Edgar Allan Poe published an essay, \"Maelzel's Chess-Player,\" arguing that a person was hidden inside." },
+        { "type": "p", "text": "Poe was right. A chess master sat in the cabinet on a sliding seat, moving out of sight whenever the doors were opened. The machine was destroyed by a fire in Philadelphia in 1854, and the secret was published in 1857." },
+        { "type": "p", "text": "In 2005, Amazon named a service after it: Mechanical Turk, where people did tiny tasks that computers couldn't. Amazon called it \"artificial artificial intelligence.\" Its closure was set for September 30, 2026." },
+        {
+          "type": "thenNow",
+          "then": { "label": "Then · 1770", "text": "A \"thinking machine\" wins at chess. Inside, a human is doing the thinking." },
+          "now": { "label": "Now · 2026", "text": "Amazon's Mechanical Turk, a marketplace of humans doing tasks computers couldn't, was set to close on September 30, 2026." }
+        },
+        { "type": "p", "text": "So maybe, when a machine seems a little too smart, check the cabinet." }
+      ]
+    },
+    {
+      "id": "luddites",
+      "title": "The Luddites weren't against technology",
+      "blocks": [
+        { "type": "p", "text": "Nottinghamshire, England, 1811. Skilled stocking knitters began breaking into workshops at night and smashing the machines. Their letters were signed by \"General Ludd,\" a leader who probably never existed." },
+        { "type": "p", "text": "They didn't smash every machine. They went after bosses who used the machines to cut wages and turn out cheap, shoddy goods. They weren't against technology. They were against getting ripped off." },
+        { "type": "p", "text": "Parliament's answer, in 1812, was to make machine-breaking a crime punishable by death. One lord stood up to object: the poet Lord Byron, in his very first speech in the House of Lords. It didn't help. At York in 1813, seventeen men were sentenced to death." },
+        { "type": "quote", "text": "They weren't against technology. They were against getting ripped off." },
+        { "type": "p", "text": "About two hundred years later, Hollywood writers went on strike for 148 days in 2023, and one fight was over AI. They won a rule that AI can't write or rewrite their literary material. Nobody smashed a thing. Maybe the Luddites just needed a better contract." }
+      ]
+    },
+    {
+      "id": "winters",
+      "title": "AI has crashed twice before",
+      "blocks": [
+        { "type": "p", "text": "In 1955, four scientists asked for money for a summer project: ten men, two months. They wrote that a significant advance could be made if \"a carefully selected group of scientists work on it together for a summer.\" The workshop ran at Dartmouth in 1956, and the proposal is credited with naming the field: artificial intelligence." },
+        { "type": "p", "text": "The summer turned out to be long. In 1966, a US report found machine translation slower, less accurate and more expensive than human translators, and the funding dried up. In 1973, a British report gutted AI research in the UK. That was the first AI winter." },
+        { "type": "p", "text": "Then came a thaw. In 1981, Japan set aside $850 million for its Fifth Generation computer project. In 1987, the market for specialized AI machines collapsed. That was winter number two." },
+        {
+          "type": "thenNow",
+          "then": { "label": "Then · 1987", "text": "The market for AI computers collapses, and AI's second winter begins." },
+          "now": { "label": "Now · April 2026", "text": "Four tech giants planned about $725 billion in spending for the year, much of it for AI (Financial Times figure, as reported April 30, 2026)." }
+        },
+        { "type": "p", "text": "Maybe this time it's a summer that lasts. That's not advice, just the forecast." }
+      ]
+    },
+    {
+      "id": "eliza",
+      "title": "The first chatbot scared its creator",
+      "blocks": [
+        { "type": "p", "text": "At MIT in the mid-1960s, Joseph Weizenbaum wrote a program called ELIZA, named after Eliza Doolittle, the flower seller taught to speak like a lady in Pygmalion. Its most famous act was a therapist. Mostly, it turned your own words back into questions. It was about two hundred lines of code." },
+        { "type": "p", "text": "His secretary had watched him build it for months. She tried it, and then asked him to leave the room so she could talk to it in private." },
+        { "type": "p", "text": "Weizenbaum was shaken. He wrote in 1976 that a simple program could \"induce powerful delusional thinking in quite normal people,\" and he spent the rest of his life warning people about AI." },
+        {
+          "type": "thenNow",
+          "then": { "label": "Then · 1960s", "text": "A secretary asks her boss to leave the room so she can talk to a 200-line program in private." },
+          "now": { "label": "Now · 2026", "text": "One in five Americans aged 18 to 29 told Pew they get emotional support or advice from chatbots (survey Feb 2026, published June 2026)." }
+        },
+        { "type": "p", "text": "Maybe the secretary was just early." }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    { "title": "Mechanical Turk", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Mechanical_Turk" },
+    { "title": "How a phony 18th-century chess robot fooled the world", "publisher": "History.com", "url": "https://www.history.com/articles/how-a-phony-18th-century-chess-robot-fooled-the-world" },
+    { "title": "Untold history of AI: Mechanical Turk revisited", "publisher": "IEEE Spectrum", "url": "https://spectrum.ieee.org/untold-history-of-ai-mechanical-turk-revisited-tktkt" },
+    { "title": "Amazon Mechanical Turk", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Amazon_Mechanical_Turk" },
+    { "title": "Amazon Mechanical Turk shutdown", "publisher": "TechRepublic", "url": "https://techrepublic.com/article/news-amazon-mechanical-turk-shutdown/" },
+    { "title": "Luddite", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Luddite" },
+    { "title": "The proclamation of Ned Ludd", "publisher": "The National Archives (UK)", "url": "https://www.nationalarchives.gov.uk/explore-the-collection/stories/the-proclamation-of-ned-ludd/" },
+    { "title": "Destruction of Stocking Frames, etc. Act 1812", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Destruction_of_Stocking_Frames,_etc._Act_1812" },
+    { "title": "Byron was one of the few prominent defenders of the Luddites", "publisher": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smart-news/byron-was-one-few-prominent-defenders-luddites-180962248/" },
+    { "title": "What Hollywood writers won on AI", "publisher": "Axios", "url": "https://www.axios.com/2023/09/27/ai-wga-hollywood-writers-contract" },
+    { "title": "Dartmouth workshop", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Dartmouth_workshop" },
+    { "title": "Artificial intelligence coined at Dartmouth", "publisher": "Dartmouth College", "url": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth" },
+    { "title": "AI winter", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/AI_winter" },
+    { "title": "Big Tech's AI spending plans reach $725 billion", "publisher": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion" },
+    { "title": "ELIZA", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/ELIZA" },
+    { "title": "Why people demanded privacy to confide in the world's first chatbot", "publisher": "IEEE Spectrum", "url": "https://spectrum.ieee.org/why-people-demanded-privacy-to-confide-in-the-worlds-first-chatbot" },
+    { "title": "Why the computer scientist behind the world's first chatbot dedicated his life to publicizing the threat posed by AI", "publisher": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/history/why-the-computer-scientist-behind-the-worlds-first-chatbot-dedicated-his-life-to-publicizing-the-threat-posed-by-ai-180987971/" },
+    { "title": "1 in 5 adults under 30 say they get emotional support from chatbots", "publisher": "Pew Research Center", "url": "https://www.pewresearch.org/chart/1-in-5-adults-under-30-say-they-get-emotional-support-from-chatbots-higher-than-for-older-adults/" }
+  ]
+}

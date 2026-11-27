@@ -1,0 +1,26 @@
+---
+// The big "Watch on YouTube" and "Follow on X" pill buttons.
+// On a story page, pass youtubeUrl / xUrl to link to that story's own video or post.
+import Icons from './Icons.astro';
+const { site, youtubeUrl, xUrl, row = false, big = false } = Astro.props;
+const ytHref = youtubeUrl || site.youtube.url;
+const xHref = xUrl || site.x.url;
+---
+<div class:list={['follow-buttons', { 'follow-buttons--row': row }]}>
+  <a class:list={['pill', 'pill--yt', { 'pill--big': big }]} href={ytHref} target="_blank" rel="noopener">
+    <span class="pill__icon"><Icons name="play" size={16} color="#b3322a" /></span>
+    <span class="pill__text">
+      <span class="pill__title">{youtubeUrl ? 'Watch the video' : 'Watch on YouTube'}</span>
+      <span class="pill__sub">{youtubeUrl ? `On YouTube · ${site.youtube.handle}` : `Shorts and full videos · ${site.youtube.handle}`}</span>
+    </span>
+    <Icons name="arrow" size={18} />
+  </a>
+  <a class:list={['pill', 'pill--x', { 'pill--big': big }]} href={xHref} target="_blank" rel="noopener">
+    <span class="pill__icon"><Icons name="x" size={16} color="#1f1a14" stroke={2.6} /></span>
+    <span class="pill__text">
+      <span class="pill__title">{xUrl ? 'Discuss on X' : 'Follow on X'}</span>
+      <span class="pill__sub">{xUrl ? `Join the thread · ${site.x.handle}` : `Posts and threads · ${site.x.handle}`}</span>
+    </span>
+    <Icons name="arrow" size={18} />
+  </a>
+</div>

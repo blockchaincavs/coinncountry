@@ -1,0 +1,120 @@
+{
+  "slug": "who-named-black-friday",
+  "status": "published",
+  "featured": true,
+  "title": "Who really named Black Friday?",
+  "seoTitle": "Who Really Named Black Friday? (Not the Stores)",
+  "description": "Philadelphia police called the day after Thanksgiving Black Friday by about 1960. Stores hated it, tried \"Big Friday,\" and lost. The full, sourced story.",
+  "dek": "It wasn't a marketing team. It was a city full of tired cops, and the stores spent years trying to make the name go away.",
+  "summary": "Not the stores. Philadelphia police were calling the day after Thanksgiving \"Black Friday\" by about 1960, for the traffic, the crowds and the long shifts. Merchants hated it, and in 1961 the city tried a friendlier name. It flopped, and the insult became one of the biggest brands in retail.",
+  "topic": { "name": "Booms & Busts", "slug": "booms-and-busts" },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "cover": {
+    "src": "/media/who-named-black-friday/cover.jpg",
+    "alt": "Illustration of a traffic cop in silhouette against a Philadelphia skyline at dusk, with the words Cops named it",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 6,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    { "title": "Black Friday was named by angry cops", "cover": "/media/who-named-black-friday/short09.jpg", "youtubeId": "" },
+    { "title": "The first Black Friday crashed gold", "cover": "/media/who-named-black-friday/short10.jpg", "youtubeId": "" },
+    { "title": "Black Friday was once a sick day", "cover": "/media/who-named-black-friday/short11.jpg", "youtubeId": "" }
+  ],
+  "keyFacts": [
+    "Philadelphia police were calling the day after Thanksgiving \"Black Friday\" by about 1960, because of the crowds and traffic.",
+    "In 1961 the city tried to rename it \"Big Friday.\" The new name faded by the mid-1960s.",
+    "A 1951 factory magazine had already used \"Black Friday\" for the day, because so many workers called in sick.",
+    "The \"stores go from red ink to black ink\" explanation first shows up in print in 1981.",
+    "The original Black Friday was a gold market crash on September 24, 1869."
+  ],
+  "timeline": [
+    { "year": 1869, "label": "The first Black Friday crashes gold", "home": true },
+    { "year": 1951, "label": "A factory magazine uses it for sick days" },
+    { "year": 1961, "label": "The \"Big Friday\" rebrand flops", "home": true },
+    { "year": 1981, "label": "The \"in the black\" story first appears in print" }
+  ],
+  "chapters": [
+    {
+      "id": "philadelphia",
+      "title": "Philadelphia, about 1960",
+      "blocks": [
+        { "type": "p", "text": "Somebody will tell you this week why it's called Black Friday. Stores finally climb out of the red and into the black. Profit. It's a nice story. It first shows up in print in 1981, and the name is at least twenty years older. The people who coined it weren't counting money. They were directing traffic." },
+        { "type": "p", "text": "Picture Philadelphia on the Friday after Thanksgiving. Downtown is a wall of people. Shoppers pour in for the Christmas windows, cars lock up bumper to bumper, and out-of-town fans start rolling in for the Army-Navy game, played in the city that same weekend." },
+        { "type": "p", "text": "For the police, it was a nightmare. Joseph Barrett, a reporter who covered it, remembered it years later: the traffic division was put on twelve-hour duty, no traffic officer could take the day off, and even the police band was sent downtown." },
+        { "type": "p", "text": "So the cops gave the day a name: Black Friday. The day after it was Black Saturday. In November 1960, a trade paper reported Philadelphia police bracing for record traffic jams. By December 1961, a public relations newsletter spelled it out: officers called the days after Thanksgiving Black Friday and Black Saturday. Black, as in bad. A day you survive." },
+        { "type": "quote", "text": "The stores didn't pick the name. They spent years trying to get rid of it." }
+      ]
+    },
+    {
+      "id": "rebrand",
+      "title": "The rebrand that flopped",
+      "blocks": [
+        { "type": "p", "text": "Store owners hated it. Nobody wants their biggest sales weekend to sound like a funeral." },
+        { "type": "p", "text": "So in 1961, Abe S. Rosen, a deputy city representative and the city's PR man, offered a fix: Big Friday and Big Saturday. Cheerful. Positive. Official." },
+        { "type": "p", "text": "Philadelphia papers played along into the mid-1960s, then quietly dropped it. The cops kept saying Black Friday, and so did everybody else. Maybe that's the lesson: you can't rebrand a traffic jam." },
+        {
+          "type": "thenNow",
+          "then": { "label": "Then · 1961", "text": "Philadelphia police use \"Black Friday\" for the worst traffic day of the year, and the city tries to replace it with \"Big Friday.\"" },
+          "now": { "label": "Now · 2026", "text": "Stores print \"Black Friday\" on their own banners, and the sales now stretch across weeks instead of one day." }
+        }
+      ]
+    },
+    {
+      "id": "sick-day",
+      "title": "They weren't even first",
+      "blocks": [
+        { "type": "p", "text": "Philadelphia's cops weren't the first to call the day after Thanksgiving Black Friday." },
+        { "type": "p", "text": "In November 1951, a magazine for factory managers, Factory Management and Maintenance, warned about a strange illness it called \"Friday-after-Thanksgiving-itis.\" Second only to the bubonic plague in its effects, the column joked. So many workers suddenly called in sick, and the column called that day Black Friday too." },
+        { "type": "p", "text": "That one didn't catch on. But the feeling did: for the people in charge, the day after Thanksgiving was trouble." }
+      ]
+    },
+    {
+      "id": "gold",
+      "title": "The first Black Friday in money",
+      "blocks": [
+        { "type": "p", "text": "There's an even older Black Friday, and no turkey was involved. September 24, 1869, in the Gold Room in New York." },
+        { "type": "p", "text": "Jay Gould, one of the most hated men on Wall Street, had a plan: buy up so much gold that everyone else would have to pay his price. His partner in the scheme was Jim Fisk. There was one problem. The US Treasury was sitting on a mountain of gold, and if the government sold, the corner would collapse." },
+        { "type": "p", "text": "So Gould got close to the government. He worked through Abel Corbin, who was married to President Ulysses S. Grant's younger sister. He got the assistant treasurer, Daniel Butterfield, on board with a $10,000 check, more than Butterfield's $8,000 yearly salary." },
+        { "type": "p", "text": "Gold climbed. But Grant caught on. Julia Grant wrote to Corbin's wife that the president was \"very much annoyed by your speculations. You must close them as quick as you can.\" Gould told Corbin, \"I am undone if that letter gets out.\"" },
+        { "type": "p", "text": "On Friday morning, gold opened at $145 and ran to $160. Then word came that Grant had ordered the Treasury to sell $4 million in gold. Within minutes, the price crashed into the $130s." },
+        { "type": "p", "text": "Brokers were wiped out. Stock prices fell 20% in a week. Wheat dropped from $1.40 a bushel to 77 cents. Gould and Fisk never spent a day in jail. A congressional investigation led by future president James Garfield cleared Grant and tore into Gould, and that was it. America's first Black Friday was the day the money went dark." }
+      ]
+    },
+    {
+      "id": "brand",
+      "title": "How the insult became the brand",
+      "blocks": [
+        { "type": "p", "text": "For about a century, Black Friday meant disaster. Then retail pulled off one of its best rebrands. Stores stopped fighting the name and changed what it meant." },
+        { "type": "p", "text": "On November 28, 1981, the Philadelphia Inquirer printed a new explanation: Black Friday is when stores' books go from red ink to black ink. The cops' curse became the cashier's blessing. It's catchy and flattering, and as an origin story, it's backwards. The cops had the name twenty years earlier." },
+        { "type": "p", "text": "The New York Times was mentioning Philadelphia's Black Friday by 1975. Even in 1985, stores in Cincinnati and Los Angeles had never heard the term. Then the profit story spread, and the name rode along with it." },
+        { "type": "p", "text": "One more story you'll see shared: that Black Friday comes from slave auctions after Thanksgiving. There's no evidence for it. The real story is more boring, and more Philadelphia." }
+      ]
+    },
+    {
+      "id": "calendar",
+      "title": "Stores have bent the calendar before",
+      "blocks": [
+        { "type": "p", "text": "This isn't the first time retail leaned on the holidays. In 1939, Franklin Roosevelt moved Thanksgiving a week earlier to give stores a longer Christmas shopping season, and for a few years America had two Thanksgivings, depending on which state you lived in. Congress fixed the holiday to the fourth Thursday of November in 1941." },
+        { "type": "p", "text": "So who named Black Friday? Not the stores, and not the accountants. Tired traffic cops in Philadelphia, standing in the cold for twelve hours while the whole city tried to park at once. The stores tried to cancel the name, failed, and then sold it back to us as good news. Maybe that's the most American part: if you can't beat the nickname, print it on a banner and mark everything 40% off." }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    { "title": "Why Is It Called Black Friday?", "publisher": "Britannica", "url": "https://www.britannica.com/story/why-is-it-called-black-friday" },
+    { "title": "Black Friday origins fact check", "publisher": "Snopes", "url": "https://www.snopes.com/fact-check/black-friday-2" },
+    { "title": "Black Friday / Big Friday", "publisher": "Barry Popik", "url": "https://barrypopik.com/blog/black_friday_big_friday" },
+    { "title": "Black Friday's Thanksgiving origins", "publisher": "History.com", "url": "https://www.history.com/articles/black-friday-thanksgiving-origins-history" },
+    { "title": "Black Friday (shopping)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_Friday_(shopping)" },
+    { "title": "Black Friday (1869)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_Friday_(1869)" },
+    { "title": "Crisis Chronicles: The Gold Panic of 1869, America's First Black Friday", "publisher": "Federal Reserve Bank of New York, Liberty Street Economics", "url": "https://libertystreeteconomics.newyorkfed.org/2016/01/crisis-chronicles-the-gold-panic-of-1869-americas-first-black-friday/" },
+    { "title": "The 1951 \"Black Friday\" find (ADS-L mailing list, Aug 2009)", "publisher": "American Dialect Society", "url": "https://listserv.linguistlist.org/pipermail/ads-l/2009-August/092018.html" },
+    { "title": "Why Black Friday has dark roots", "publisher": "NPR", "url": "https://www.npr.org/sections/thetwo-way/2012/11/21/165662876/why-black-friday-has-dark-roots" }
+  ]
+}

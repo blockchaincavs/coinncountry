@@ -1,0 +1,23 @@
+---
+// One page per topic (Booms & Busts, Presidents, AI & Tech...). Topics come from the stories.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { getSite, getAllStories, getTopics } from '../../lib/stories.js';
+
+const { slug } = Astro.params;
+const [site, stories, topics] = await Promise.all([getSite(), getAllStories(), getTopics()]);
+const topic = topics.find((t) => t.slug === slug);
+if (!topic) return Astro.rewrite('/404');
+const list = stories.filter((s) => s.topic.slug === slug);
+---
+<BaseLayout site={site} topics={topics} title={topic.name} description={`${topic.name} stories from ${site.name}: fact-checked history, told in a few minutes each.`}>
+  <header class="page-head">
+    <span class="label label--red">Topic</span>
+    <h1>{topic.name}</h1>
+  </header>
+  <div class="story-list">
+    {list.map((s) => <StoryCard story={s} headingLevel={2} />)}
+  </div>
+  <AdSlot site={site} size="billboard" />
+</BaseLayout>
