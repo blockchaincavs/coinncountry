@@ -94,7 +94,7 @@ npm run build
 npm start
 ```
 
-Then open http://localhost:4321. Before going online, set your real address: copy `.env.example` to `.env` and change `SITE_URL` (used for the sitemap and SEO links).
+Then open http://localhost:4321. Before going online, set your real address: create a file named `.env` in the project folder containing one line, `SITE_URL=https://your-domain.com` (used for the sitemap and SEO links).
 
 ## For developers (you can skip this)
 

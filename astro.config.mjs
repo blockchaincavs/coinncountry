@@ -3,7 +3,7 @@
 import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
 
-// Reads SITE_URL from a .env file, if you made one (see .env.example).
+// Reads SITE_URL from a .env file, if you made one (one line: SITE_URL=https://your-domain.com).
 try {
   process.loadEnvFile();
 } catch {
