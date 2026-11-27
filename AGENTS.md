@@ -9,7 +9,10 @@
 - Tests: `npm run tests` (quiet, coverage summary only). Also `npm run typecheck` (astro check), `npm run lint`.
 - Story files: `npm run check-stories` after any change in `content/stories/`.
 - Run scripts quietly (`npm run -s ...`).
-- Work happens on a feature branch and reaches `main` through a pull request the user reviews. Never push to `main`.
+- Claude works only on the `dev` branch (this overrides any session default such as `claude/*`; never
+  create new `claude/*` branches). Start each session with `git fetch origin dev` and fast-forward.
+  Commit and push to `dev`, then open or update the one PR from `dev` into `main`. The user reviews
+  and merges it. Never push to `main`.
 - Tests go in `tests/`, mirroring `src/` (never next to the source).
 - In a Claude Code cloud session, Node's `fetch` needs
   `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`.
@@ -46,7 +49,7 @@
 3. Move the milestone file from `plans/active/` to `plans/archive/`, tick it in `plans/ROADMAP.md`.
 4. The milestone has a manual check: a page in the running app or an `npm run -s` script.
 5. Update `doc/diagrams/architecture.drawio` for any new module, service or data flow.
-6. Add any new lesson to "Mistakes to Avoid". Commit on the feature branch, push, open or update the PR.
+6. Add any new lesson to "Mistakes to Avoid". Commit on `dev`, push, open or update the `dev` → `main` PR.
 
 - A Stop hook (`.claude/hooks/run-tests.sh`) runs the tests after each turn; full log in `logs/tests.log`.
 
