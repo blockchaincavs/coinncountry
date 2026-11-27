@@ -20,8 +20,8 @@ Source of truth for the plan: the project's `website/website-plan.md` (Nov 27, 2
 
 - GitHub holds code only. Stories and images are content.
 - Now: story metadata in local JSON files, one per story. Adding a story = adding one file.
-- Later: Appwrite DocumentsDB (stories) and Storage (images), read live on each page load; Appwrite
-  Sites hosting with deploys from GitHub. Nothing is created in Appwrite until the user says so.
+- Later: Appwrite DocumentsDB (stories) and Storage (images), read live on each page load; Netlify
+  hosting with deploys from the GitHub `main` branch. Nothing is created in Appwrite until the user says so.
 
 ## SEO
 
