@@ -1,0 +1,181 @@
+{
+  "slug": "morgan-locked-library-1907",
+  "status": "published",
+  "title": "The night JP Morgan locked the bankers in",
+  "seoTitle": "The Panic of 1907: When JP Morgan Locked the Doors",
+  "description": "In 1907 America had no central bank, so JP Morgan locked New York's trust company presidents in his library until they agreed to a rescue. The sourced story.",
+  "dek": "America had no central bank. So when the money ran out in 1907, everyone turned to one private banker, and he turned the key.",
+  "summary": "In the fall of 1907, runs swept New York's trust companies and the country had no central bank to stop them. JP Morgan called the trust presidents to his library, quietly locked the doors and kept them until they pledged a rescue. Six years later, the Federal Reserve was born.",
+  "topic": {
+    "name": "Booms & Busts",
+    "slug": "booms-and-busts"
+  },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "note": "This story is history, not investment advice.",
+  "cover": {
+    "src": "/media/morgan-locked-library-1907/cover.jpg",
+    "alt": "Illustration of bankers in top hats around a table in a dark library lined with books, with the date Sunday, Nov 3, 1907",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    {
+      "title": "The night JP Morgan locked the doors",
+      "cover": "/media/morgan-locked-library-1907/short02.jpg",
+      "youtubeId": ""
+    }
+  ],
+  "keyFacts": [
+    "On October 16, 1907, F. Augustus Heinze and Charles W. Morse failed to corner the stock of United Copper, setting off runs on banks tied to them.",
+    "Depositors pulled nearly $8 million out of the Knickerbocker Trust, which suspended on October 22, 1907.",
+    "On October 24, the interest rate for overnight loans to stock traders hit 100%.",
+    "On Sunday, November 3, 1907, JP Morgan gathered trust company presidents in his library and locked the doors until they pledged money for a rescue.",
+    "The panic led to the Federal Reserve Act, signed by President Woodrow Wilson on December 23, 1913."
+  ],
+  "timeline": [
+    {
+      "year": 1907,
+      "label": "Morgan locks the bankers in",
+      "home": true
+    },
+    {
+      "year": 1913,
+      "label": "The Federal Reserve is born"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "copper",
+      "title": "A copper bet goes wrong",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "How do you stop a bank panic when your country doesn't have a central bank? In 1907, the answer was: lock the bankers in a room."
+        },
+        {
+          "type": "p",
+          "text": "It started with a bet. On October 16, 1907, two speculators, F. Augustus Heinze and Charles W. Morse, tried to corner the stock of United Copper, buying up so many shares that anyone who had bet against it would have to pay their price. The corner failed, and the stock collapsed."
+        },
+        {
+          "type": "p",
+          "text": "That would have been their problem alone, except Heinze and Morse were tied to banks. Depositors started to worry about where their money was sitting. Four days later, the New York Clearing House, a club of the city's big banks, declared that the Heinze-linked banks were solvent and pushed out their management. The fire, it seemed, was out."
+        }
+      ]
+    },
+    {
+      "id": "knickerbocker",
+      "title": "The run on the Knickerbocker",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It wasn't. On Friday, October 18, word spread that Charles T. Barney, president of the Knickerbocker Trust Company, had ties to Morse. Depositors lined up to get their money out."
+        },
+        {
+          "type": "p",
+          "text": "Trust companies were the hot financial firms of the day, and most of them, Knickerbocker included, weren't members of the Clearing House. So on Monday, October 21, when Knickerbocker asked the Clearing House for a loan, it was turned down."
+        },
+        {
+          "type": "p",
+          "text": "Knickerbocker's last hope was JP Morgan, the most powerful banker in the country. Morgan sent a young banker named Benjamin Strong to look at the books. Strong couldn't tell whether the company was solvent, and Morgan refused to help. The board fired Barney the same day. On October 22, after depositors had pulled out nearly $8 million, the Knickerbocker suspended."
+        },
+        {
+          "type": "quote",
+          "text": "There was no central bank to call. There was Morgan."
+        }
+      ]
+    },
+    {
+      "id": "spreads",
+      "title": "The panic spreads",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Fear jumped to the next trust in line, the Trust Company of America, where the runs were worst. It spilled onto Wall Street too. Stock traders borrowed overnight \"call money\" to buy shares, and on October 22 the interest rate on those loans jumped from 9.5% to 70%. Two days later it hit 100%."
+        },
+        {
+          "type": "p",
+          "text": "Today, a central bank would pour cash into the system. In 1907 there wasn't one, so Morgan did it by hand. He asked the big financial institutions for cash and had it delivered to the stock exchange's lending post. On October 26, the Clearing House began issuing loan certificates that banks could use in place of cash with each other, and it limited how much cash depositors could withdraw."
+        },
+        {
+          "type": "p",
+          "text": "The panic still didn't stop. The trust companies kept bleeding money for two more weeks. Between late August and mid-December 1907, more than 36% of the deposits in New York City's trust companies walked out the door."
+        },
+        {
+          "type": "thenNow",
+          "then": {
+            "label": "Then · 1907",
+            "text": "With no central bank, one private banker gathers the money to stop a run, by persuasion and a locked door."
+          },
+          "now": {
+            "label": "Now",
+            "text": "The Federal Reserve, created because of this panic, acts as the lender of last resort for banks in a crisis."
+          }
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "title": "Nobody leaves",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Morgan's new private library stood at Madison Avenue and 36th Street in Manhattan. He had gotten the keys in late 1906."
+        },
+        {
+          "type": "p",
+          "text": "On Sunday, November 3, 1907, he summoned the presidents of New York's trust companies there. Then, according to the Morgan Library's own history, he \"quietly locked the front doors.\" NPR's Planet Money puts it plainly: Morgan locked them in and kept them through the night, looking for a $25 million rescue pool."
+        },
+        {
+          "type": "p",
+          "text": "Just after four in the morning, Morgan announced that they would sign a pledge, each committing a share of the money. They signed."
+        },
+        {
+          "type": "p",
+          "text": "Maybe Morgan didn't even need the key. Nobody wanted to be the banker who walked out on him."
+        }
+      ]
+    },
+    {
+      "id": "fed",
+      "title": "Duck hunters on Jekyll Island",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The rescue worked, but the damage was real. In 1908, industrial production fell 17% and the economy, measured as real GNP, shrank 12%. And the rescue had depended on one private banker deciding to step in."
+        },
+        {
+          "type": "p",
+          "text": "So the country decided it needed a permanent fix. Senator Nelson Aldrich, chairman of the Senate Finance Committee, arranged a secret trip to a private club on Jekyll Island, Georgia. The bankers who went dressed as duck hunters and used only their first names. They spent about a week there and came back with a plan for a network of regional central banks."
+        },
+        {
+          "type": "p",
+          "text": "On December 23, 1913, President Woodrow Wilson signed the Federal Reserve Act. The Fed was born in a locked room."
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    {
+      "title": "The Panic of 1907",
+      "publisher": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/panic-of-1907"
+    },
+    {
+      "title": "The Panic of 1907",
+      "publisher": "The Morgan Library & Museum",
+      "url": "https://www.themorgan.org/exhibitions/online/guide/stop-23-panic-1907"
+    },
+    {
+      "title": "A Locked Door, A Secret Meeting, And The Birth Of The Fed",
+      "publisher": "NPR Planet Money",
+      "url": "https://www.npr.org/sections/money/2013/12/23/256326325/a-locked-door-a-secret-meeting-and-the-birth-of-the-fed"
+    }
+  ]
+}

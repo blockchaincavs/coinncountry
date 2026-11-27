@@ -1,0 +1,181 @@
+{
+  "slug": "franksgiving-two-thanksgivings",
+  "status": "published",
+  "title": "The year America had two Thanksgivings",
+  "seoTitle": "Franksgiving: When FDR Moved Thanksgiving for Shoppers",
+  "description": "In 1939 FDR moved Thanksgiving up a week to give stores a longer Christmas season. States split, football games moved, and Congress had to fix it.",
+  "dek": "Department stores wanted a longer Christmas season. The president gave them one, and the country ended up with two Thanksgivings.",
+  "summary": "In 1939, Thanksgiving was due to fall on November 30, leaving stores a short Christmas season in the middle of the Depression. FDR moved it up a week. States split, football coaches scrambled, calendar makers fumed, and by 1941 Congress nailed the holiday to the fourth Thursday.",
+  "topic": {
+    "name": "Holidays",
+    "slug": "holidays"
+  },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "cover": {
+    "src": "/media/franksgiving-two-thanksgivings/cover.jpg",
+    "alt": "Illustration of two calendar pages, November 23 and November 30, both marked Thanksgiving, under the words Texas 1939",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    {
+      "title": "The year America had two Thanksgivings",
+      "cover": "/media/franksgiving-two-thanksgivings/short06.jpg",
+      "youtubeId": ""
+    }
+  ],
+  "keyFacts": [
+    "November 1939 had five Thursdays, so the traditional last-Thursday Thanksgiving would have fallen on November 30.",
+    "Retailers worried about a short Christmas shopping season. On August 14, 1939, FDR announced Thanksgiving would move up a week, to November 23.",
+    "States split between the two dates, and Texas, Colorado and Mississippi observed both.",
+    "On May 20, 1941, FDR admitted the experiment \"did not work.\"",
+    "On December 26, 1941, he signed a law fixing Thanksgiving on the fourth Thursday of November."
+  ],
+  "timeline": [
+    {
+      "year": 1939,
+      "label": "FDR moves Thanksgiving",
+      "home": true
+    },
+    {
+      "year": 1941,
+      "label": "Congress fixes the fourth Thursday"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "calendar",
+      "title": "Five Thursdays and a short season",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Since Abraham Lincoln's proclamation in 1863, presidents had set Thanksgiving on the last Thursday of November. Most years that was fine. But November 1939 had five Thursdays, which put Thanksgiving on November 30."
+        },
+        {
+          "type": "p",
+          "text": "Back then, stores didn't start the Christmas push until after Thanksgiving, so a late holiday meant a short shopping season. In the middle of the Depression, retailers took that seriously. In June 1939, White House aide Lowell Mellett warned that retailers were \"anticipating one of the worst shopping periods in many years,\" with just twenty shopping days between November 30 and Christmas."
+        },
+        {
+          "type": "p",
+          "text": "On August 4, Lew Hahn, general manager of the National Retail Dry Goods Association, wrote to Commerce Secretary Harry Hopkins. He estimated that 12 to 15% of a year's retail sales happened between Thanksgiving and Christmas."
+        },
+        {
+          "type": "p",
+          "text": "It wasn't a new ask. In 1933, when Thanksgiving also fell on November 30, the same association had publicly urged an earlier date. That time, the White House said no."
+        }
+      ]
+    },
+    {
+      "id": "announcement",
+      "title": "Nothing sacred about it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This time, Roosevelt said yes. At a press conference on August 14, 1939, he announced that Thanksgiving would move up a week, to November 23. Asked about tradition, he said there was \"nothing sacred about it.\""
+        },
+        {
+          "type": "p",
+          "text": "Retailers cheered. Hahn predicted \"a reassuring effect on manufacturers and distributors.\" Hopkins predicted the best Christmas trade in a decade."
+        },
+        {
+          "type": "quote",
+          "text": "Nothing sacred about it, said the president. The country disagreed."
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "title": "A country with two calendars",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Governors proclaimed the holiday for their own states, and they didn't all follow along. According to History.com's count, 22 states went with November 23, 23 kept November 30, and Texas, Colorado and Mississippi took both."
+        },
+        {
+          "type": "p",
+          "text": "Plymouth, Massachusetts, home of the Pilgrim story, wired the president the next day that it was \"strongly opposed to any change.\" Massachusetts Governor Leverett Saltonstall called the move \"more upsetting than advantageous.\" A Gallup poll found 62% of Americans against it."
+        },
+        {
+          "type": "p",
+          "text": "Football had its own crisis. Thanksgiving games were a tradition, and schedules were set years ahead. Penn and Cornell moved their game to Saturday, November 25. Rutgers simply held two Thanksgivings so students could get to the Brown game on November 30."
+        },
+        {
+          "type": "p",
+          "text": "Calendar makers had it worst. Several million calendars for 1940 were already printed with the old date. The nickname people gave the new holiday stuck around longer than the holiday did: Franksgiving."
+        },
+        {
+          "type": "thenNow",
+          "then": {
+            "label": "Then · 1939",
+            "text": "Retailers push the president to move Thanksgiving earlier so the Christmas shopping season starts sooner."
+          },
+          "now": {
+            "label": "Now",
+            "text": "Holiday sales start well before Thanksgiving, no proclamation needed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "retreat",
+      "title": "It did not work",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Roosevelt kept the earlier date for 1940 and 1941. The results were murky. In 1941, New York Mayor Fiorello LaGuardia surveyed 2,000 stores. Of the 203 that answered, 76 liked the earlier date, 94 didn't, and 33 had no opinion. He reported \"a great deal of feeling against the change, much of it sentimental.\""
+        },
+        {
+          "type": "p",
+          "text": "On May 20, 1941, Roosevelt admitted the experiment \"did not work,\" and the press laughed. Thanksgiving would go back to the last Thursday the next year."
+        },
+        {
+          "type": "p",
+          "text": "Maybe FDR figured nobody would mind trading a week of tradition for more shopping. It turns out you don't mess with turkey."
+        }
+      ]
+    },
+    {
+      "id": "law",
+      "title": "Last or fourth?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Congress decided to settle it for good. On October 6, 1941, the House passed a resolution making the last Thursday of November a legal holiday. The Senate changed one word: \"last\" became \"fourth,\" so the holiday could never fall as late as November 30 again. The Senate approved the change on December 9, two days after Pearl Harbor."
+        },
+        {
+          "type": "p",
+          "text": "The House agreed, and on December 26, 1941, Roosevelt signed it. Thanksgiving has been the fourth Thursday of November ever since, starting in 1942. Retailers got a little of what they wanted after all: Thanksgiving can no longer land on November 29 or 30."
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    {
+      "title": "Franksgiving: FDR's Thanksgiving experiment (Prologue, by Chessman)",
+      "publisher": "National Archives",
+      "url": "https://www.archives.gov/publications/prologue/fdr-thanksgiving-experiment"
+    },
+    {
+      "title": "The Year of Two Thanksgivings",
+      "publisher": "FDR Presidential Library (National Archives blog)",
+      "url": "https://fdr.blogs.archives.gov/2022/11/14/the-year-of-two-thanksgivings/"
+    },
+    {
+      "title": "Thanksgiving as a Federal Holiday",
+      "publisher": "National Archives Prologue blog",
+      "url": "https://prologue.blogs.archives.gov/2023/11/20/thanksgiving-as-a-federal-holiday/"
+    },
+    {
+      "title": "When FDR changed the date of Thanksgiving",
+      "publisher": "History.com",
+      "url": "https://www.history.com/articles/fdr-thanksgiving-date-change-franksgiving"
+    }
+  ]
+}

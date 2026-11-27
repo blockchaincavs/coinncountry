@@ -1,0 +1,158 @@
+{
+  "slug": "tv-dinner-leftover-turkey",
+  "status": "published",
+  "title": "The TV dinner started as 260 tons of leftover turkey",
+  "seoTitle": "The TV Dinner Began With 260 Tons of Leftover Turkey",
+  "description": "In 1953 Swanson was stuck with 260 tons of unsold Thanksgiving turkey. The fix became the TV dinner, though who invented it is still disputed.",
+  "dek": "Swanson guessed wrong about Thanksgiving and got stuck with a train full of turkey. The fix changed how America ate dinner, and three different people get the credit.",
+  "summary": "In 1953, Swanson overestimated Thanksgiving and was left with about 260 tons of turkey riding around in refrigerated railroad cars. The answer was a 98-cent frozen meal in a box that looked like a TV set. In 1954 Swanson sold 10 million. Who came up with it is still a fight.",
+  "topic": {
+    "name": "Holidays",
+    "slug": "holidays"
+  },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "cover": {
+    "src": "/media/tv-dinner-leftover-turkey/cover.jpg",
+    "alt": "Illustration of a 1950s television set whose screen shows a divided tray of turkey, stuffing, peas and sweet potatoes with a 98 cent price tag",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    {
+      "title": "The TV dinner started as 260 tons of leftover turkey",
+      "cover": "/media/tv-dinner-leftover-turkey/short08.jpg",
+      "youtubeId": ""
+    }
+  ],
+  "keyFacts": [
+    "In 1953, Swanson overestimated Thanksgiving demand and was left with about 260 tons of frozen turkey in ten refrigerated railroad cars.",
+    "The solution was a frozen turkey dinner on an aluminum tray, sold for 98 cents in a box designed to look like a TV set.",
+    "Swanson sold more than 10 million TV dinners in 1954, its first full year.",
+    "Salesman Gerry Thomas said he invented and named it. The Swanson family credits brothers Gilbert and Clarke Swanson.",
+    "Frozen meals on trays already existed, including Maxson's airline \"Strato-Plates\" in the 1940s."
+  ],
+  "timeline": [
+    {
+      "year": 1953,
+      "label": "Leftover turkey becomes the TV dinner",
+      "home": true
+    },
+    {
+      "year": 1954,
+      "label": "Swanson sells 10 million"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "turkey",
+      "title": "A train full of turkey",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In 1953, Swanson had a turkey problem. The company had badly overestimated how much turkey Americans would buy for Thanksgiving, and it was stuck with about 260 tons of it, some 520,000 pounds."
+        },
+        {
+          "type": "p",
+          "text": "The birds sat in ten refrigerated railroad cars. The cars' cooling only worked while the train was moving, so the turkey rode back and forth between Nebraska and the East Coast while the company figured out what to do with it."
+        },
+        {
+          "type": "quote",
+          "text": "The cooling only worked while the train was moving. So the turkey kept moving."
+        }
+      ]
+    },
+    {
+      "id": "tray",
+      "title": "The salesman and the tray",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most widely accepted version, according to Smithsonian Magazine, credits Gerry Thomas, a Swanson salesman. History.com describes him as earning $200 a month. His idea was to freeze the turkey along with the side dishes in a divided aluminum tray, so the whole meal could go straight into the oven."
+        },
+        {
+          "type": "p",
+          "text": "Thomas told the story with an airline tray as his inspiration. History.com has him spotting aluminum trays in a Pittsburgh distributor's warehouse instead. By his own account, his reward was $1,000 and a promotion."
+        },
+        {
+          "type": "p",
+          "text": "The first dinner was turkey with cornbread stuffing, gravy, sweet potatoes and peas. It cooked in about 25 minutes and cost 98 cents. The box was the stroke of genius: it was designed to look like a television set, screen and knobs included."
+        }
+      ]
+    },
+    {
+      "id": "tv",
+      "title": "Dinner in front of the TV",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The timing was perfect. In 1950, about 9% of American homes had a television. By 1955, more than 64% did. Millions of women had also joined the workforce in the early 1950s, and a dinner that went from freezer to table in 25 minutes was an easy sell. One ad line promised: \"I'm late, but dinner won't be!\""
+        },
+        {
+          "type": "p",
+          "text": "In 1954, its first full year, Swanson sold more than 10 million TV dinners. In 1955 it sold 25 million. Not everyone approved. In 1957, columnist Frederick C. Othman wrote that eating off a tray in front of the TV was \"an abomination.\""
+        },
+        {
+          "type": "p",
+          "text": "The tray kept evolving. A fourth compartment, for dessert, arrived in 1960. And in 1986, Smithsonian credits the Campbell Soup Company with inventing a microwave-safe tray."
+        },
+        {
+          "type": "thenNow",
+          "then": {
+            "label": "Then · 1953",
+            "text": "A company stuck with 260 tons of unsold turkey invents a new product to get rid of it."
+          },
+          "now": {
+            "label": "Now",
+            "text": "Frozen dinners are a multibillion-dollar business. National Geographic put frozen meals at about $9 billion a year in 2015."
+          }
+        }
+      ]
+    },
+    {
+      "id": "who",
+      "title": "Who really invented it?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Case closed? Not quite. Thomas said he came up with the dinner and the name \"TV dinner.\" The Swanson family disagrees. Clarke Swanson's heirs dispute Thomas's story, and Betty Cronin, a 21-year-old bacteriologist at Swanson at the time, credits brothers Gilbert and Clarke Swanson. Some accounts say Gilbert was the one inspired by an airline tray, and that he came up with the name."
+        },
+        {
+          "type": "p",
+          "text": "And neither side was first. Clarence Birdseye had patented a method for freezing fish back in 1925. In the 1940s, the Maxson company sold frozen \"Strato-Plates\" to airlines. In 1947, Jack Fisher's \"Fridgi-Dinners\" were sold to bars and taverns. In 1949, brothers Albert and Meyer Bernstein founded Frozen Dinners Inc. near Pittsburgh, under the One-Eyed Eskimo label, and sold more than 400,000 by 1950."
+        },
+        {
+          "type": "p",
+          "text": "What Swanson had was the brand, the box and the timing. Betty Cronin, for her part, told the Chicago Tribune in 1989: \"I've never had a TV dinner in my home.\""
+        },
+        {
+          "type": "p",
+          "text": "Maybe the real inventor was 260 tons of panic."
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    {
+      "title": "A Brief History of the TV Dinner",
+      "publisher": "Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/arts-culture/brief-history-tv-dinner-180976039/"
+    },
+    {
+      "title": "Who invented the TV dinner?",
+      "publisher": "History.com",
+      "url": "https://www.history.com/articles/tv-dinner-history-inventor"
+    },
+    {
+      "title": "How Leftover Turkey Launched the TV Dinner",
+      "publisher": "National Geographic",
+      "url": "https://www.nationalgeographic.com/culture/article/how-leftover-turkey-launched-the-tv-dinner"
+    }
+  ]
+}

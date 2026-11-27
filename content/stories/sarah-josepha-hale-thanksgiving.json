@@ -1,0 +1,169 @@
+{
+  "slug": "sarah-josepha-hale-thanksgiving",
+  "status": "published",
+  "title": "The \"Mary Had a Little Lamb\" author who gave us Thanksgiving",
+  "seoTitle": "Sarah Josepha Hale, the Mother of Thanksgiving",
+  "description": "Sarah Josepha Hale, credited with Mary Had a Little Lamb, spent decades campaigning for a national Thanksgiving until Lincoln proclaimed one in 1863.",
+  "dek": "You know her nursery rhyme. Her bigger hit is the holiday, and it took her decades of letters to get it.",
+  "summary": "Before 1863, each state picked its own Thanksgiving, if it held one at all. Sarah Josepha Hale, the editor credited with \"Mary Had a Little Lamb,\" spent decades writing editorials and letters to governors and presidents. Five days after her letter to Abraham Lincoln, he proclaimed a national day.",
+  "topic": {
+    "name": "Holidays",
+    "slug": "holidays"
+  },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "cover": {
+    "src": "/media/sarah-josepha-hale-thanksgiving/cover.jpg",
+    "alt": "Illustration of a large pile of sealed envelopes on a green background",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    {
+      "title": "The Mary Had a Little Lamb author who gave us Thanksgiving",
+      "cover": "/media/sarah-josepha-hale-thanksgiving/short07.jpg",
+      "youtubeId": ""
+    }
+  ],
+  "keyFacts": [
+    "Sarah Josepha Hale, born in New Hampshire in 1788, is credited with the poem \"Mary's Lamb,\" better known as \"Mary Had a Little Lamb.\"",
+    "She edited Godey's Lady's Book, one of the most widely read magazines in America, for about 40 years starting in 1837.",
+    "Before 1863, each state set its own Thanksgiving. In 1848 the holiday was kept in 24 of the 29 states.",
+    "Hale wrote to Abraham Lincoln on September 28, 1863, asking for a national Thanksgiving.",
+    "On October 3, 1863, Lincoln proclaimed a national Thanksgiving for the last Thursday of November. Historians can't say for sure how much her letter mattered."
+  ],
+  "timeline": [
+    {
+      "year": 1863,
+      "label": "Hale's letter to Lincoln",
+      "home": true
+    }
+  ],
+  "chapters": [
+    {
+      "id": "lamb",
+      "title": "The lady with the lamb",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "You know her nursery rhyme. \"Mary Had a Little Lamb\" first appeared under the title \"Mary's Lamb,\" and it's credited to Sarah Josepha Hale. Her bigger hit is the holiday you might be recovering from right now."
+        },
+        {
+          "type": "p",
+          "text": "Hale was born in Newport, New Hampshire, in 1788. When her husband died, he left her with five young children, and she turned to writing to support them."
+        },
+        {
+          "type": "p",
+          "text": "In 1827 she published a novel, Northwood, with a whole chapter about a New England Thanksgiving dinner. \"The roasted turkey took precedence on this occasion,\" reads a later edition. The holiday was already on her mind."
+        }
+      ]
+    },
+    {
+      "id": "godeys",
+      "title": "The most powerful editor in America",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In 1837 Hale became editor of Godey's Lady's Book, and she stayed for about 40 years. By the eve of the Civil War, its circulation topped 150,000, enormous for the time. She used the platform for causes she cared about, including education for women."
+        },
+        {
+          "type": "p",
+          "text": "One cause outlasted the rest. At the time, Thanksgiving was a patchwork. George Washington had proclaimed a day of thanks in 1789, and John Adams and James Madison issued similar proclamations, but there was no fixed national holiday. Each state chose its own day, if it held one at all. A Godey's editorial in 1848 counted the holiday as kept in 24 of the 29 states."
+        },
+        {
+          "type": "thenNow",
+          "then": {
+            "label": "Then · 1848",
+            "text": "Thanksgiving is a state holiday, on different days in different places, and some states skip it."
+          },
+          "now": {
+            "label": "Now",
+            "text": "Thanksgiving is a national holiday on the fourth Thursday of November, fixed by law in 1941."
+          }
+        }
+      ]
+    },
+    {
+      "id": "letters",
+      "title": "Seventeen years of letters",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hale wanted one national day of thanks, the same everywhere. She began pushing the idea in print, and in 1846, according to the National Park Service, she started a letter-writing campaign to governors and presidents."
+        },
+        {
+          "type": "p",
+          "text": "Presidents came and went. Still no national day. She kept writing."
+        },
+        {
+          "type": "quote",
+          "text": "Presidents came and went. She kept writing."
+        }
+      ]
+    },
+    {
+      "id": "lincoln",
+      "title": "The letter to Lincoln",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On September 28, 1863, in the middle of the Civil War, Hale wrote to Abraham Lincoln from Philadelphia. She told him that for the last fifteen years she had set forth the idea in her magazine, and that she had sent her papers to the governors of every state and territory."
+        },
+        {
+          "type": "p",
+          "text": "What the holiday needed, she wrote, was \"National recognition and authoritive fixation, only\" to become \"permanently, an American custom and institution.\""
+        },
+        {
+          "type": "p",
+          "text": "Five days later, on October 3, 1863, Lincoln issued a proclamation, drafted by Secretary of State William Seward, setting apart \"the last Thursday of November next\" as a national day of Thanksgiving. Presidents proclaimed the holiday every year after that."
+        },
+        {
+          "type": "p",
+          "text": "Did her letter do it? Historians can't prove it. The National Park Service says the proclamation may never have been issued without her, while History.com notes it's unclear whether Lincoln was already leaning that way. Maybe Lincoln just wanted the letters to stop."
+        }
+      ]
+    },
+    {
+      "id": "after",
+      "title": "The date fight that came later",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Hale got her national day, but the date stayed up to each president. That worked until 1939, when Franklin Roosevelt moved Thanksgiving up a week to help retailers, and the country ended up with two. Congress fixed it to the fourth Thursday of November in 1941."
+        },
+        {
+          "type": "p",
+          "text": "So when you go back for seconds, thank the lady with the lamb."
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    {
+      "title": "Lincoln and Thanksgiving",
+      "publisher": "National Park Service",
+      "url": "https://www.nps.gov/liho/learn/historyculture/lincoln-and-thanksgiving.htm"
+    },
+    {
+      "title": "Lincoln and Thanksgiving",
+      "publisher": "Abraham Lincoln Presidential Library and Museum",
+      "url": "https://presidentlincoln.illinois.gov/Blog/Posts/169/Abraham-Lincoln/2022/11/Lincoln-and-Thanksgiving/blog-post/"
+    },
+    {
+      "title": "Sarah Josepha Hale",
+      "publisher": "Plimoth Patuxet Museums",
+      "url": "https://plimoth.org/yath/unit-5/sarah-josepha-hale"
+    },
+    {
+      "title": "Abraham Lincoln and the Mother of Thanksgiving",
+      "publisher": "History.com",
+      "url": "https://www.history.com/articles/abraham-lincoln-and-the-mother-of-thanksgiving"
+    }
+  ]
+}
