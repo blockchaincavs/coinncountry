@@ -5,7 +5,9 @@ import {
   publishedStories,
   readNext,
   shortsRow,
+  STORIES_PER_AD,
   topicsOf,
+  withAds,
 } from '../../src/core/stories';
 import { story } from '../fixtures';
 
@@ -105,5 +107,29 @@ describe('adBreaks', () => {
     expect([...adBreaks(6)]).toEqual([0, 2]);
     expect([...adBreaks(3)]).toEqual([0]);
     expect([...adBreaks(1)]).toEqual([]);
+  });
+});
+
+describe('withAds', () => {
+  const shape = (n: number, every?: number) =>
+    withAds(Array.from({ length: n }, (_, i) => i + 1), every)
+      .map((x) => (x.kind === 'ad' ? `ad${x.n}` : String(x.item)))
+      .join(',');
+
+  it('puts an ad after every 3rd story by default', () => {
+    expect(STORIES_PER_AD).toBe(3);
+    expect(shape(8)).toBe('1,2,3,ad1,4,5,6,ad2,7,8');
+  });
+  it('never ends the list with an ad', () => {
+    expect(shape(6)).toBe('1,2,3,ad1,4,5,6');
+    expect(shape(3)).toBe('1,2,3');
+  });
+  it('adds no ad to short or empty lists', () => {
+    expect(shape(2)).toBe('1,2');
+    expect(shape(0)).toBe('');
+  });
+  it('accepts another spacing and treats bad values as 1', () => {
+    expect(shape(9, 4)).toBe('1,2,3,4,ad1,5,6,7,8,ad2,9');
+    expect(shape(3, 0)).toBe('1,ad1,2,ad2,3');
   });
 });
