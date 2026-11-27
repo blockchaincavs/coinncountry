@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { loadSiteData } from '../../site-data';
+import { withAds } from '../../core/stories';
 
 const { slug } = Astro.params;
 const { site, stories, topics } = await loadSiteData();
@@ -17,7 +18,9 @@ const list = stories.filter((s) => s.topic.slug === slug);
     <h1>{topic.name}</h1>
   </header>
   <div class="story-list">
-    {list.map((s) => <StoryCard story={s} headingLevel={2} />)}
+    {withAds(list).map((x) =>
+      x.kind === 'item' ? <StoryCard story={x.item} headingLevel={2} /> : <AdSlot site={site} size="leaderboard" label={`Ad slot · 728×90 between stories (#${x.n})`} />
+    )}
   </div>
   <AdSlot site={site} size="billboard" />
 </BaseLayout>

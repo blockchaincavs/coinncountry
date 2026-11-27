@@ -580,6 +580,12 @@ button:focus-visible {
   gap: 32px;
   padding: 32px 0;
 }
+.story-list > .ad-slot {
+  /* An ad between story cards takes a whole row of the grid. */
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0 auto;
+}
 .story-list .card-side {
   border-bottom: 0;
   padding-bottom: 0;
