@@ -96,6 +96,10 @@ npm start
 
 Then open http://localhost:4321. Before going online, set your real address: create a file named `.env` in the project folder containing one line, `SITE_URL=https://your-domain.com` (used for the sitemap and SEO links).
 
+## Put it online (Netlify)
+
+Netlify builds the site from the `main` branch on GitHub. The settings live in `netlify.toml`, so in Netlify you only connect the repository and add one environment variable, `SITE_URL` (your site's address, for example `https://coinncountry.netlify.app`). Every merge into `main` publishes a new version, including new or edited story files.
+
 ## For developers (you can skip this)
 
 The project follows the [claude-scaffolding](https://github.com/blockchaincavs/claude-scaffolding) setup. None of it is needed to run the site.

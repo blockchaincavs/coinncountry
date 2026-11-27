@@ -1,7 +1,7 @@
 # Architecture
 
 The CoinNCountry website: fact-checked American and economic history stories for readers who found
-the channel on YouTube or X. Pages render on the server on every request (Astro SSR, Node adapter),
+the channel on YouTube or X. Pages render on the server on every request (Astro SSR: Netlify adapter on Netlify, Node adapter on your computer),
 so Google sees full pages and new stories appear without a rebuild.
 
 Diagram: [`doc/diagrams/architecture.drawio`](doc/diagrams/architecture.drawio) (open in draw.io).
