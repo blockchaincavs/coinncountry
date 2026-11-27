@@ -1,0 +1,11 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["jest", "node"]
+  },
+  "include": [".astro/types.d.ts", "src", "tests", "scripts"],
+  "exclude": ["dist", "node_modules"]
+}

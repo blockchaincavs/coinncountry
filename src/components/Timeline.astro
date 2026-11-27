@@ -1,0 +1,33 @@
+---
+// The Ledger timeline on the homepage. Each story marks some of its years with "home": true.
+import type { HomeTimelineItem } from '../core/stories';
+
+interface Props {
+  items: HomeTimelineItem[];
+}
+const { items } = Astro.props;
+const colors = ['#2f6b4f', '#b3322a', '#1f1a14', '#c99a1e'];
+// Gold is too light for text on paper, so gold years use a darker gold.
+const yearColors: Record<string, string> = { '#c99a1e': '#7a5c0c' };
+---
+<section class="timeline" aria-labelledby="timeline-title">
+  <h2 class="section-title" id="timeline-title">On the timeline</h2>
+  <div class="timeline__track">
+    <div class="timeline__line" aria-hidden="true"></div>
+    <ol class="timeline__items">
+      {items.map((t, i) => {
+        const dot = colors[i % colors.length] ?? '#1f1a14';
+        return (
+          <li class="timeline__item" style={`--dot:${dot};--year:${yearColors[dot] || dot}`}>
+            <a href={`/stories/${t.story.slug}`}>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <span class="timeline__year">{t.year}</span>
+              <img class="timeline__img" src={t.image || t.story.cover.src} alt="" width="1600" height="900" loading="lazy" />
+              <span class="timeline__label">{t.label}</span>
+            </a>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+</section>

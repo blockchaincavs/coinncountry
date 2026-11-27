@@ -1,0 +1,33 @@
+---
+// A story preview. variant: 'lead' (big homepage story) or 'side' (smaller card).
+import { dropCap, readMinutes } from '../core/format';
+import type { Story } from '../core/types';
+
+interface Props {
+  story: Story;
+  variant?: 'lead' | 'side';
+  showImage?: boolean;
+  headingLevel?: 2 | 3;
+}
+const { story, variant = 'side', showImage = true, headingLevel = 3 } = Astro.props;
+const href = `/stories/${story.slug}`;
+const minutes = readMinutes(story);
+const hasVideo = Boolean(story.links?.youtubeVideoId);
+const H = headingLevel === 2 ? 'h2' : 'h3';
+const { first, rest } = dropCap(story.summary);
+---
+{variant === 'lead' ? (
+  <article>
+    <span class="label label--red">Today's story · {minutes} min read{hasVideo && ' · with video'}</span>
+    <H class="card-lead__title"><a href={href}>{story.title}</a></H>
+    <a href={href} tabindex="-1" aria-hidden="true"><img class="card-lead__img" src={story.cover.src} alt="" width="1600" height="900" /></a>
+    <p class="card-lead__text"><span class="drop-cap">{first}</span>{rest}</p>
+  </article>
+) : (
+  <article class="card-side">
+    <a class="label label--green" href={`/topics/${story.topic.slug}`}>{story.topic.name}</a>
+    {showImage && <a href={href} tabindex="-1" aria-hidden="true"><img class="card-side__img" src={story.cover.src} alt="" width="1600" height="900" loading="lazy" /></a>}
+    <H class="card-side__title"><a href={href}>{story.title}</a></H>
+    <p class="card-side__text">{story.summary}</p>
+  </article>
+)}

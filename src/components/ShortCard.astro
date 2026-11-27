@@ -1,0 +1,16 @@
+---
+// A 9:16 Short cover that links to the full story (or to the Short on YouTube once it has an ID).
+import type { ShortVideo, Story } from '../core/types';
+
+interface Props {
+  short: ShortVideo;
+  story: Story;
+}
+const { short, story } = Astro.props;
+const href = `/stories/${story.slug}`;
+---
+<a class="short-card" href={href}>
+  <img class="short-card__img" src={short.cover} alt={`Short cover: ${short.title}`} width="540" height="960" loading="lazy" />
+  <span class="short-card__title">{short.title}</span>
+  <span class="short-card__more">Read the whole story →</span>
+</a>

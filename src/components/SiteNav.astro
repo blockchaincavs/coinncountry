@@ -1,0 +1,18 @@
+---
+// Section links. Topics come from the stories, so a new topic appears here by itself.
+import type { SiteSettings, Topic } from '../core/types';
+
+interface Props {
+  topics: Topic[];
+  site: SiteSettings;
+}
+const { topics, site } = Astro.props;
+const path = Astro.url.pathname;
+const current = (href: string) => (path === href || path.startsWith(href + '/') ? 'page' : undefined);
+---
+<nav class="nav" aria-label="Sections">
+  <a href="/stories" aria-current={current('/stories')}>Stories</a>
+  {topics.map((t) => <a href={`/topics/${t.slug}`} aria-current={current(`/topics/${t.slug}`)}>{t.name}</a>)}
+  <a href={site.youtube.url} target="_blank" rel="noopener">Watch</a>
+  <a href="/about" aria-current={current('/about')}>About</a>
+</nav>

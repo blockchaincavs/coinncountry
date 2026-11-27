@@ -1,0 +1,48 @@
+---
+// Homepage. Everything here is built from the story JSON files.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import StoryCard from '../components/StoryCard.astro';
+import Timeline from '../components/Timeline.astro';
+import FollowButtons from '../components/FollowButtons.astro';
+import ShortCard from '../components/ShortCard.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { loadSiteData } from '../site-data';
+import { pickLead, shortsRow } from '../core/stories';
+import { homeJsonLd } from '../core/seo';
+
+const { site, stories, topics, timeline } = await loadSiteData();
+const lead = pickLead(stories);
+const others = stories.filter((s) => s !== lead);
+const shorts = shortsRow(stories, 4);
+---
+<BaseLayout masthead site={site} topics={topics} description={site.description} jsonLd={homeJsonLd(site, Astro.site ?? Astro.url)}>
+  {lead && (
+    <div class="front">
+      <div class="front__lead"><StoryCard story={lead} variant="lead" headingLevel={2} /></div>
+      <aside class="front__side" aria-label="More stories">
+        {others.slice(0, 2).map((s, i) => <StoryCard story={s} showImage={i === 0} />)}
+        <AdSlot site={site} size="rectangle" />
+      </aside>
+    </div>
+  )}
+
+  {timeline.length > 0 && <Timeline items={timeline} />}
+
+  <section class="follow-band" aria-label={`Follow ${site.name}`}>
+    <span class="follow-band__title">Catch every story first</span>
+    <FollowButtons site={site} row big />
+  </section>
+
+  <AdSlot site={site} size="leaderboard" />
+
+  {shorts.length > 0 && (
+    <section class="shorts" aria-labelledby="shorts-title">
+      <h2 class="section-title" id="shorts-title">Seen it on Shorts? Read the whole story</h2>
+      <div class="shorts__grid">
+        {shorts.map(({ short, story }) => <ShortCard short={short} story={story} />)}
+      </div>
+    </section>
+  )}
+
+  <AdSlot site={site} size="billboard" label="Ad slot · 970×90 above the footer" />
+</BaseLayout>

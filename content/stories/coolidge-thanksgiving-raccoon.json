@@ -1,0 +1,197 @@
+{
+  "slug": "coolidge-thanksgiving-raccoon",
+  "status": "published",
+  "title": "Coolidge's Thanksgiving dinner moved into the White House",
+  "seoTitle": "Rebecca, Coolidge's Thanksgiving Raccoon",
+  "description": "In 1926 a live raccoon was sent to Calvin Coolidge to be eaten at Thanksgiving. The family named her Rebecca, and she ran the White House. The sourced story.",
+  "dek": "A live raccoon arrived in November 1926 to be cooked. The family named her Rebecca instead, and she ran the place.",
+  "summary": "A live raccoon arrived at the White House in November 1926 to be cooked for Thanksgiving. The Coolidges named her Rebecca instead, and she rode in the presidential limousine, starred at the Easter Egg Roll, and escaped constantly.",
+  "topic": { "name": "Presidents", "slug": "presidents" },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "cover": {
+    "src": "/media/coolidge-thanksgiving-raccoon/cover.jpg",
+    "alt": "Cut-paper illustration of a raccoon at the White House",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 4,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    {
+      "title": "Coolidge's Thanksgiving dinner arrived alive",
+      "cover": "/media/coolidge-thanksgiving-raccoon/short12.jpg",
+      "youtubeId": ""
+    },
+    {
+      "title": "The White House Houdini was a raccoon",
+      "cover": "/media/coolidge-thanksgiving-raccoon/short13.jpg",
+      "youtubeId": ""
+    }
+  ],
+  "keyFacts": [
+    "In November 1926, a supporter from Mississippi sent President Calvin Coolidge a live raccoon to be eaten at Thanksgiving.",
+    "Coolidge had never eaten raccoon. The family kept her and named her Rebecca.",
+    "Her Christmas present was an embroidered collar reading \"White House Raccoon.\"",
+    "She rode in the presidential limousine, appeared at the 1927 Easter Egg Roll and traveled 1,800 miles by train to the Black Hills.",
+    "When the Coolidges left in 1929, she went to the zoo in Rock Creek Park, today's National Zoo."
+  ],
+  "timeline": [
+    { "year": 1926, "label": "Coolidge's Thanksgiving raccoon arrives", "home": true },
+    { "year": 1927, "label": "Rebecca stars at the Easter Egg Roll" },
+    { "year": 1929, "label": "Rebecca moves to the zoo" }
+  ],
+  "chapters": [
+    {
+      "id": "delivery",
+      "title": "The delivery, November 1926",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In November 1926, Thanksgiving dinner was delivered to the White House, still breathing. It had a mask, a striped tail and very sharp claws."
+        },
+        {
+          "type": "p",
+          "text": "For decades, a Rhode Island farmer named Horace Vose had sent the president his Thanksgiving turkey. After Vose died in 1913, all sorts of people started shipping the White House animals for the holiday. In 1926, a supporter named Vinnie Joyce, of Nitta Yuma, Mississippi, sent something different: a live raccoon. Not as a pet. As the main course."
+        },
+        {
+          "type": "p",
+          "text": "That sounds strange now. It wasn't then. Around the turn of the century, raccoon showed up on city restaurant menus, and Mark Twain listed it among the American foods he missed in Europe. The Washington Evening Star said it tasted like a chicken crossed with a suckling pig."
+        },
+        {
+          "type": "p",
+          "text": "There was one problem. Calvin Coolidge had never eaten raccoon. Asked if it was edible, the president said it might be, for some people. But not for him."
+        }
+      ]
+    },
+    {
+      "id": "menu",
+      "title": "A change of menu",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So the Coolidges didn't cook her. They kept her. Maybe it was the first lady, Grace, who never met an animal she didn't want to keep. Or maybe it was Cal: a man that thrifty knows a free pet when he sees one."
+        },
+        {
+          "type": "p",
+          "text": "Either way, the family named her Rebecca, and at Christmas she got an embroidered collar that read \"White House Raccoon.\" Coolidge was known as Silent Cal because he said so little, but by the fire at night, Rebecca curled up in his lap."
+        },
+        {
+          "type": "p",
+          "text": "She had joined a small zoo. The Coolidges already had collies named Rob Roy and Prudence Prim, a bear from Mexico, a wallaby, a pygmy hippo from the tire tycoon Harvey Firestone, and twin lion cubs named Tax Reduction and Budget Bureau. This is a money site. We have to stop and admire that."
+        },
+        {
+          "type": "thenNow",
+          "then": {
+            "label": "Then · 1926",
+            "text": "A live raccoon is mailed to the president to be eaten, and he simply declines to eat her."
+          },
+          "now": {
+            "label": "Now · every November",
+            "text": "Presidents have formally pardoned a Thanksgiving turkey in an annual ceremony since 1989."
+          }
+        }
+      ]
+    },
+    {
+      "id": "houdini",
+      "title": "The White House Houdini",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Rebecca was not impressed by any of it. She walked the grounds on a leash. Her favorite thing was a bathtub with a little water in it and a bar of soap to play with."
+        },
+        {
+          "type": "p",
+          "text": "Inside the house, she unscrewed light bulbs, opened cabinets, dug the plants out of their pots, clawed the upholstery and ripped up clothes. A Cleveland paper called her \"the most obstreperous of all the recent White House pets.\" The staff called her a regular Houdini. She slipped her harnesses and gnawed through the bars of her cage."
+        },
+        {
+          "type": "quote",
+          "text": "She slipped her harnesses and chewed through her cage. The staff called her a regular Houdini."
+        },
+        {
+          "type": "p",
+          "text": "So the Coolidges built her a wooden house up in a tree on the South Lawn, with a wire fence around it."
+        }
+      ]
+    },
+    {
+      "id": "road",
+      "title": "On the road, 1927",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In March 1927 the White House was getting a new roof, so the family moved for a while into a mansion on Dupont Circle. Rebecca rode over in the presidential limousine."
+        },
+        {
+          "type": "p",
+          "text": "In April she appeared at the White House Easter Egg Roll, where, the Evening Star reported, she \"plainly evidenced her dislike for the whole doings.\" That summer she went on vacation with the president: 1,800 miles by train to the Black Hills of South Dakota, where she climbed the tallest pine tree and played keep-away with the agents guarding him."
+        }
+      ]
+    },
+    {
+      "id": "reuben",
+      "title": "Reuben, and the last course",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The Coolidges decided Rebecca needed company. A male raccoon was caught for her, and the president named him Reuben. It was not love at first sight. Reuben escaped again and again; once he climbed onto Pennsylvania Avenue and held up traffic for about half an hour. One day he got out and never came back. Grace Coolidge wrote that Rebecca \"continued to live in single blessedness.\""
+        },
+        {
+          "type": "p",
+          "text": "In March 1929, Coolidge's term ended and the family went home to Northampton, Massachusetts. Rebecca went to the zoo in Rock Creek Park, today's National Zoo. She didn't live long after."
+        },
+        {
+          "type": "p",
+          "text": "Coolidge never pardoned anybody's dinner. He just didn't feel like eating raccoon, and that got Rebecca a bathtub, a collar, a tree house and a ride in the president's car. Not a bad deal, for dinner."
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    {
+      "title": "The Thanksgiving raccoon that became a presidential pet",
+      "publisher": "History.com",
+      "url": "https://www.history.com/articles/the-thanksgiving-raccoon-that-became-a-presidential-pet"
+    },
+    {
+      "title": "Raccoons at the White House",
+      "publisher": "White House Historical Association",
+      "url": "https://www.whitehousehistory.org/raccoons-at-the-white-house"
+    },
+    {
+      "title": "Sourcing the White House turkey",
+      "publisher": "White House Historical Association",
+      "url": "https://www.whitehousehistory.org/sourcing-the-white-house-turkey"
+    },
+    {
+      "title": "Rebecca (raccoon)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rebecca_(raccoon)"
+    },
+    {
+      "title": "The Coolidge pets",
+      "publisher": "Calvin Coolidge Presidential Foundation",
+      "url": "https://coolidgefoundation.org/resources/the-coolidge-pets/"
+    },
+    {
+      "title": "Raccoon was once a Thanksgiving feast fit for a president",
+      "publisher": "Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/smart-news/raccoon-was-once-thanksgiving-feast-fit-president-180973665/"
+    },
+    {
+      "title": "When Rebecca the raccoon ruled the White House",
+      "publisher": "Library of Congress blog",
+      "url": "https://blogs.loc.gov/loc/2021/01/when-rebecca-the-raccoon-ruled-the-white-house/"
+    },
+    {
+      "title": "Horace Vose, the Rhode Island turkey farmer who fed presidents",
+      "publisher": "New England Historical Society",
+      "url": "https://newenglandhistoricalsociety.com/horace-vose-ri-turkey-farmer-fed-11-presidents-thanksgiving/"
+    }
+  ]
+}

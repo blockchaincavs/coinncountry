@@ -3,5 +3,11 @@ dist/
 .astro/
 .env
 .env.*
-!.env.example
 .DS_Store
+coverage/
+logs/
+*.log
+.claude/settings.local.json
+Thumbs.db
+.idea/
+.vscode/

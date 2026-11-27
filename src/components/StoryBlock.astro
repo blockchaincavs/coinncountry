@@ -1,0 +1,27 @@
+---
+// Renders one block of story text. Block types:
+//   { "type": "p", "text": "..." }                      a paragraph
+//   { "type": "quote", "text": "..." }                  a big pull quote
+//   { "type": "thenNow", "then": {label,text}, "now": {label,text} }   the Then vs now box
+import { dropCap as split } from '../core/format';
+import type { Block } from '../core/types';
+
+interface Props {
+  block: Block;
+  dropCap?: boolean;
+}
+const { block, dropCap = false } = Astro.props;
+const cap = block.type === 'p' ? split(block.text) : undefined;
+---
+{block.type === 'p' && (
+  dropCap
+    ? <p><span class="drop-cap">{cap?.first}</span>{cap?.rest}</p>
+    : <p>{block.text}</p>
+)}
+{block.type === 'quote' && <blockquote class="pull-quote">{block.text}</blockquote>}
+{block.type === 'thenNow' && (
+  <div class="then-now">
+    <div><span class="label label--red">{block.then.label}</span><span>{block.then.text}</span></div>
+    <div><span class="label label--green">{block.now.label}</span><span>{block.now.text}</span></div>
+  </div>
+)}

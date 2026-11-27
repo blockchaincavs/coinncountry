@@ -1,0 +1,102 @@
+---
+// The page shell used by every page: <head> with SEO tags, header, footer.
+// Props:
+//   title, description   page title and one-line summary (search results and link previews)
+//   image                share image path (defaults to the logo)
+//   type                 'website' or 'article'
+//   jsonLd               structured data object(s) for Google
+//   masthead             true on the homepage for the big newspaper header
+//   site, topics         brand settings and topic list (from the data layer)
+import '../styles/global.css';
+import SiteNav from '../components/SiteNav.astro';
+import SocialIcons from '../components/SocialIcons.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import JsonLd from '../components/JsonLd.astro';
+import { absoluteUrl, longDate } from '../core/format';
+import type { SiteSettings, Topic } from '../core/types';
+
+interface Props {
+  site: SiteSettings;
+  topics: Topic[];
+  title?: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>;
+  masthead?: boolean;
+  publishedAt?: string;
+  updatedAt?: string;
+  noindex?: boolean;
+}
+
+const {
+  title, description, image, type = 'website', jsonLd, masthead = false,
+  site, topics, publishedAt, updatedAt, noindex = false,
+} = Astro.props;
+
+const fullTitle = title ? `${title} | ${site.name}` : `${site.name}: ${site.tagline}`;
+const base = Astro.site ?? Astro.url;
+const canonical = absoluteUrl(Astro.url.pathname, base);
+const shareImage = absoluteUrl(image || site.logo, base);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex" />}
+  <meta name="theme-color" content="#efe4cc" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Link previews (Facebook, X, iMessage, Slack...) -->
+  <meta property="og:site_name" content={site.name} />
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title || site.name} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={shareImage} />
+  {publishedAt && <meta property="article:published_time" content={publishedAt} />}
+  {updatedAt && <meta property="article:modified_time" content={updatedAt} />}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content={site.x.handle} />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" />
+
+  {jsonLd && <JsonLd data={jsonLd} />}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the story</a>
+  <div class="wrap">
+    {masthead ? (
+      <>
+        <div class="topbar label">
+          <span>{longDate(new Date())}</span>
+          <span>Bold history</span>
+          <SocialIcons site={site} />
+        </div>
+        <header class="masthead">
+          <h1 class="masthead__name">{site.name}</h1>
+          <p class="masthead__tagline">{site.tagline}</p>
+        </header>
+        <SiteNav topics={topics} site={site} />
+      </>
+    ) : (
+      <header class="site-header">
+        <a class="site-header__name" href="/">{site.name}</a>
+        <SiteNav topics={topics} site={site} />
+      </header>
+    )}
+    <main id="main">
+      <slot />
+    </main>
+    <SiteFooter site={site} />
+  </div>
+</body>
+</html>

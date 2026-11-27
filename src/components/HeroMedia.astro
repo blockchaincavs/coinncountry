@@ -1,0 +1,44 @@
+---
+// Story hero: the YouTube video if the story has one, otherwise the cover image.
+// The video loads only when the reader presses play (keeps the page fast).
+import type { Story } from '../core/types';
+
+interface Props {
+  story: Story;
+}
+const { story } = Astro.props;
+const id = story.links?.youtubeVideoId;
+const minutes = story.links?.videoMinutes;
+---
+<figure class="hero">
+  <div class="hero__frame" data-youtube-id={id || undefined}>
+    <img src={story.cover.src} alt={story.cover.alt} width="1600" height="900" fetchpriority="high" />
+    {id && (
+      <button class="hero__play" type="button" aria-label="Play the video">
+        <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" style="margin-left:5px"><path d="M6 4l14 8-14 8z" fill="#fff" /></svg>
+      </button>
+    )}
+  </div>
+  <figcaption>
+    {id
+      ? `Prefer to watch? The ${minutes ? `${minutes}-minute ` : ''}video version, from YouTube.`
+      : story.cover.credit}
+  </figcaption>
+</figure>
+
+<script>
+  import { youtubeEmbedUrl } from '../core/format';
+
+  // Swap the cover for the YouTube player when "play" is pressed.
+  document.querySelectorAll<HTMLElement>('.hero__frame[data-youtube-id]').forEach((frame) => {
+    const button = frame.querySelector('.hero__play');
+    button?.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = youtubeEmbedUrl(frame.dataset.youtubeId ?? '');
+      iframe.title = 'YouTube video player';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      frame.replaceChildren(iframe);
+    });
+  });
+</script>
