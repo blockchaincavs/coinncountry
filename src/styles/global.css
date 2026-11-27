@@ -883,7 +883,7 @@ button:focus-visible {
   line-height: 1.1;
   margin: 32px 0 8px;
 }
-.prose a {
+.prose a:not(.pill) {
   color: var(--red);
   text-decoration: underline;
 }
