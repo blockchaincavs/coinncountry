@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FollowButtons from '../components/FollowButtons.astro';
-import { getSite, getTopics } from '../lib/stories.js';
+import { loadSiteData } from '../site-data';
 
-const [site, topics] = await Promise.all([getSite(), getTopics()]);
+const { site, topics } = await loadSiteData();
 ---
 <BaseLayout site={site} topics={topics} title="About and how we make our stories" description={`How ${site.name} researches, fact-checks and makes its history stories.`}>
   <header class="page-head">

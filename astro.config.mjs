@@ -4,7 +4,11 @@ import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
 
 // Reads SITE_URL from a .env file, if you made one (see .env.example).
-try { process.loadEnvFile(); } catch { /* no .env file: use the default below */ }
+try {
+  process.loadEnvFile();
+} catch {
+  /* no .env file: use the default below */
+}
 
 export default defineConfig({
   // Your public web address. Set SITE_URL once you buy the domain.

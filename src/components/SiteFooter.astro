@@ -1,5 +1,10 @@
 ---
 import SocialIcons from './SocialIcons.astro';
+import type { SiteSettings } from '../core/types';
+
+interface Props {
+  site: SiteSettings;
+}
 const { site } = Astro.props;
 ---
 <footer class="site-footer">

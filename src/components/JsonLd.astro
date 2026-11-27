@@ -1,6 +1,10 @@
 ---
 // Structured data for Google (schema.org). "<" is escaped so story text can't break out of the tag.
-const { data } = Astro.props;
-const json = JSON.stringify(data).replace(/</g, '\\u003c');
+import { jsonLdText } from '../core/seo';
+
+interface Props {
+  data: Record<string, unknown>;
+}
+const json = jsonLdText(Astro.props.data);
 ---
 <script type="application/ld+json" set:html={json} />

@@ -1,6 +1,11 @@
 ---
 // The two small round YouTube and X buttons (top bar and footer).
 import Icons from './Icons.astro';
+import type { SiteSettings } from '../core/types';
+
+interface Props {
+  site: SiteSettings;
+}
 const { site } = Astro.props;
 ---
 <span class="icon-links">

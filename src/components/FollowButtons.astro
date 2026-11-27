@@ -2,6 +2,15 @@
 // The big "Watch on YouTube" and "Follow on X" pill buttons.
 // On a story page, pass youtubeUrl / xUrl to link to that story's own video or post.
 import Icons from './Icons.astro';
+import type { SiteSettings } from '../core/types';
+
+interface Props {
+  site: SiteSettings;
+  youtubeUrl?: string;
+  xUrl?: string;
+  row?: boolean;
+  big?: boolean;
+}
 const { site, youtubeUrl, xUrl, row = false, big = false } = Astro.props;
 const ytHref = youtubeUrl || site.youtube.url;
 const xHref = xUrl || site.x.url;

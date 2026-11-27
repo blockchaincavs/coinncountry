@@ -12,7 +12,22 @@ import SiteNav from '../components/SiteNav.astro';
 import SocialIcons from '../components/SocialIcons.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import JsonLd from '../components/JsonLd.astro';
-import { absoluteUrl, todayLong } from '../lib/format.js';
+import { absoluteUrl, longDate } from '../core/format';
+import type { SiteSettings, Topic } from '../core/types';
+
+interface Props {
+  site: SiteSettings;
+  topics: Topic[];
+  title?: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>;
+  masthead?: boolean;
+  publishedAt?: string;
+  updatedAt?: string;
+  noindex?: boolean;
+}
 
 const {
   title, description, image, type = 'website', jsonLd, masthead = false,
@@ -20,8 +35,9 @@ const {
 } = Astro.props;
 
 const fullTitle = title ? `${title} | ${site.name}` : `${site.name}: ${site.tagline}`;
-const canonical = new URL(Astro.url.pathname, Astro.site).toString();
-const shareImage = absoluteUrl(image || site.logo, Astro.site);
+const base = Astro.site ?? Astro.url;
+const canonical = absoluteUrl(Astro.url.pathname, base);
+const shareImage = absoluteUrl(image || site.logo, base);
 ---
 <!doctype html>
 <html lang="en">
@@ -61,7 +77,7 @@ const shareImage = absoluteUrl(image || site.logo, Astro.site);
     {masthead ? (
       <>
         <div class="topbar label">
-          <span>{todayLong()}</span>
+          <span>{longDate(new Date())}</span>
           <span>Bold history</span>
           <SocialIcons site={site} />
         </div>

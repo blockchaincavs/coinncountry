@@ -1,13 +1,20 @@
 ---
 // A story preview. variant: 'lead' (big homepage story) or 'side' (smaller card).
-import { readMinutes } from '../lib/format.js';
+import { dropCap, readMinutes } from '../core/format';
+import type { Story } from '../core/types';
+
+interface Props {
+  story: Story;
+  variant?: 'lead' | 'side';
+  showImage?: boolean;
+  headingLevel?: 2 | 3;
+}
 const { story, variant = 'side', showImage = true, headingLevel = 3 } = Astro.props;
 const href = `/stories/${story.slug}`;
 const minutes = readMinutes(story);
 const hasVideo = Boolean(story.links?.youtubeVideoId);
-const H = `h${headingLevel}`;
-const first = story.summary.charAt(0);
-const rest = story.summary.slice(1);
+const H = headingLevel === 2 ? 'h2' : 'h3';
+const { first, rest } = dropCap(story.summary);
 ---
 {variant === 'lead' ? (
   <article>

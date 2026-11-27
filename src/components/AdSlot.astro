@@ -3,8 +3,16 @@
 // Today it shows a dashed placeholder box (turn off with "showAdPlaceholders": false in content/site.json).
 // When AdSense is approved, its ad code goes in here once, and every slot on every page gets it.
 // size: 'leaderboard' (728x90) | 'billboard' (970x90) | 'rectangle' (300x250) | 'skyscraper' (300x600) | 'in-article'
+import type { SiteSettings } from '../core/types';
+
+type Size = 'leaderboard' | 'billboard' | 'rectangle' | 'skyscraper' | 'in-article';
+interface Props {
+  site: SiteSettings;
+  size: Size;
+  label?: string;
+}
 const { site, size, label } = Astro.props;
-const names = {
+const names: Record<Size, string> = {
   leaderboard: 'Ad slot · 728×90 leaderboard',
   billboard: 'Ad slot · 970×90',
   rectangle: 'Ad slot · 300×250',

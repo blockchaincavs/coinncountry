@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="arch" name="Architecture">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" page="1" pageWidth="850" pageHeight="500">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="entry" value="Astro pages + site-data.ts&lt;br&gt;check-stories script" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="core" value="src/core/&lt;br&gt;story rules, SEO, validation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="adapters" value="src/adapters/&lt;br&gt;json-files.ts (Appwrite later)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ext" value="content/*.json today&lt;br&gt;Appwrite DocumentsDB later" style="shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="entry" target="core" style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entry" target="adapters" style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="adapters" target="ext" style="endArrow=block;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

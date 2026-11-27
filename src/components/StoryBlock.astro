@@ -3,11 +3,19 @@
 //   { "type": "p", "text": "..." }                      a paragraph
 //   { "type": "quote", "text": "..." }                  a big pull quote
 //   { "type": "thenNow", "then": {label,text}, "now": {label,text} }   the Then vs now box
+import { dropCap as split } from '../core/format';
+import type { Block } from '../core/types';
+
+interface Props {
+  block: Block;
+  dropCap?: boolean;
+}
 const { block, dropCap = false } = Astro.props;
+const cap = block.type === 'p' ? split(block.text) : undefined;
 ---
 {block.type === 'p' && (
   dropCap
-    ? <p><span class="drop-cap">{block.text.charAt(0)}</span>{block.text.slice(1)}</p>
+    ? <p><span class="drop-cap">{cap?.first}</span>{cap?.rest}</p>
     : <p>{block.text}</p>
 )}
 {block.type === 'quote' && <blockquote class="pull-quote">{block.text}</blockquote>}

@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run tests)",
+      "Bash(npm run -s tests)",
+      "Bash(npm run typecheck)",
+      "Bash(npm run -s typecheck)",
+      "Bash(npm run lint)",
+      "Bash(npm run -s lint)",
+      "Bash(npm run -s demo:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(npm run check-stories)",
+      "Bash(npm run -s check-stories)",
+      "Bash(npm run build)",
+      "Bash(npm run -s build)"
+    ],
+    "deny": ["Read(./.env)", "Read(./.env.*)", "Bash(git push origin main:*)"]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/run-tests.sh",
+            "timeout": 300
+          }
+        ]
+      }
+    ]
+  }
+}

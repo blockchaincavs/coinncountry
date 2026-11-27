@@ -5,22 +5,23 @@ import HeroMedia from '../../components/HeroMedia.astro';
 import StoryBlock from '../../components/StoryBlock.astro';
 import FollowButtons from '../../components/FollowButtons.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import { getSite, getAllStories, getTopics } from '../../lib/stories.js';
-import { readMinutes, shortDate } from '../../lib/format.js';
-import { storyJsonLd } from '../../lib/seo.js';
+import { loadSiteData } from '../../site-data';
+import { readMinutes, shortDate, youtubeWatchUrl } from '../../core/format';
+import { adBreaks, readNext as pickReadNext } from '../../core/stories';
+import { storyJsonLd } from '../../core/seo';
 
 const { slug } = Astro.params;
-const [site, stories, topics] = await Promise.all([getSite(), getAllStories(), getTopics()]);
+const { site, stories, topics } = await loadSiteData();
 const story = stories.find((s) => s.slug === slug);
 if (!story) return Astro.rewrite('/404');
 
 const minutes = readMinutes(story);
-const youtubeUrl = story.links?.youtubeVideoId ? `https://www.youtube.com/watch?v=${story.links.youtubeVideoId}` : undefined;
+const youtubeUrl = youtubeWatchUrl(story.links?.youtubeVideoId);
 const xUrl = story.links?.xPostUrl || undefined;
-const readNext = stories.filter((s) => s.slug !== story.slug).slice(0, 2);
+const readNext = pickReadNext(stories, story, 2);
 const isDev = import.meta.env.DEV;
 // Ads between chapters: after chapter 1 and after chapter 3 (if the story is that long).
-const adAfter = new Set([0, 2].filter((i) => i < story.chapters.length - 1));
+const adAfter = adBreaks(story.chapters.length);
 ---
 <BaseLayout
   site={site}
@@ -31,7 +32,7 @@ const adAfter = new Set([0, 2].filter((i) => i < story.chapters.length - 1));
   type="article"
   publishedAt={story.publishedAt}
   updatedAt={story.updatedAt}
-  jsonLd={storyJsonLd(story, site, Astro.site)}
+  jsonLd={storyJsonLd(story, site, Astro.site ?? Astro.url)}
 >
   <article class="story">
     <header class="story__head">
@@ -53,7 +54,7 @@ const adAfter = new Set([0, 2].filter((i) => i < story.chapters.length - 1));
         <ol class="aside__toc">
           {story.chapters.map((c, i) => <li><a href={`#${c.id}`}>{i + 1} · {c.title}</a></li>)}
         </ol>
-        {story.timeline?.length > 0 && (
+        {story.timeline && story.timeline.length > 0 && (
           <>
             <span class="aside__title">On the timeline</span>
             <ul class="aside__timeline">
@@ -67,7 +68,7 @@ const adAfter = new Set([0, 2].filter((i) => i < story.chapters.length - 1));
       </aside>
 
       <div class="story__body">
-        {story.keyFacts?.length > 0 && (
+        {story.keyFacts && story.keyFacts.length > 0 && (
           <section class="key-facts" aria-label="Key facts">
             <span class="label label--green">Key facts</span>
             <ul>{story.keyFacts.map((f) => <li>{f}</li>)}</ul>
@@ -101,7 +102,7 @@ const adAfter = new Set([0, 2].filter((i) => i < story.chapters.length - 1));
     <section class="story__end">
       <div class="sources" id="sources">
         <h2>Sources</h2>
-        <p>Every fact in this story was checked against these sources on {shortDate(story.factCheckedAt || story.updatedAt)}. Lines that start with "maybe" are just our own guesses.</p>
+        <p>Every fact in this story was checked against these sources on {shortDate(story.factCheckedAt || story.updatedAt || story.publishedAt)}. Lines that start with "maybe" are just our own guesses.</p>
         <ol>
           {story.sources.map((s) => (
             <li><a href={s.url} target="_blank" rel="noopener">{s.title}</a>, {s.publisher}</li>

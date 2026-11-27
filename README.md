@@ -39,37 +39,40 @@ Next time, you only need to `cd coinncountry` and `npm run dev`.
    ```
 
    It points out a missing comma, a missing image, a title that's too long for Google, and similar problems.
+
 5. Refresh the browser. The story is live on the homepage.
 
 What the main fields do:
 
-| Field | What it's for |
-| --- | --- |
-| `slug` | The page address: `/stories/<slug>`. Lowercase letters, numbers and dashes. |
-| `featured` | `true` puts the story in the big "Today's story" spot. |
-| `title`, `dek`, `summary` | Headline, the italic line under it, and the homepage card text. |
-| `seoTitle`, `description` | What Google and link previews show. |
-| `topic` | The section (for example Presidents). A new topic gets its own page and menu link automatically. |
-| `links.youtubeVideoId` | The ID at the end of a YouTube link (`youtube.com/watch?v=`**`THIS_PART`**). Adds the play button on the story. |
-| `links.xPostUrl` | The full link to the story's X post or thread. |
-| `shorts` | Short covers for the "Seen it on Shorts?" row. |
-| `timeline` | Dates in the story. `"home": true` puts that date on the homepage timeline. |
-| `chapters` | The story text. Each block is a paragraph (`p`), a big pull quote (`quote`), or a Then vs now box (`thenNow`). |
-| `yourTake` | A line or two in your own words. Hidden until you fill it in (you'll see a reminder box while running locally). |
-| `sources` | Every source used, shown at the bottom of the story. |
+| Field                     | What it's for                                                                                                   |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `slug`                    | The page address: `/stories/<slug>`. Lowercase letters, numbers and dashes.                                     |
+| `featured`                | `true` puts the story in the big "Today's story" spot.                                                          |
+| `title`, `dek`, `summary` | Headline, the italic line under it, and the homepage card text.                                                 |
+| `seoTitle`, `description` | What Google and link previews show.                                                                             |
+| `topic`                   | The section (for example Presidents). A new topic gets its own page and menu link automatically.                |
+| `links.youtubeVideoId`    | The ID at the end of a YouTube link (`youtube.com/watch?v=`**`THIS_PART`**). Adds the play button on the story. |
+| `links.xPostUrl`          | The full link to the story's X post or thread.                                                                  |
+| `shorts`                  | Short covers for the "Seen it on Shorts?" row.                                                                  |
+| `timeline`                | Dates in the story. `"home": true` puts that date on the homepage timeline.                                     |
+| `chapters`                | The story text. Each block is a paragraph (`p`), a big pull quote (`quote`), or a Then vs now box (`thenNow`).  |
+| `yourTake`                | A line or two in your own words. Hidden until you fill it in (you'll see a reminder box while running locally). |
+| `sources`                 | Every source used, shown at the bottom of the story.                                                            |
 
 Brand settings (name, tagline, YouTube and X links, ad placeholders on/off) are in `content/site.json`.
 
 ## How the code is organized
 
-| Folder | What's inside |
-| --- | --- |
-| `content/` | The stories (JSON) and brand settings. Moves to Appwrite later. |
-| `public/media/` | Images. Moves to Appwrite Storage later. |
-| `src/lib/stories.js` | The **only** file that reads stories. Swapping JSON for Appwrite means changing this file and nothing else. |
-| `src/components/` | Reusable pieces: story card, timeline, Then vs now box, follow buttons, ad slot, video player. |
-| `src/pages/` | Homepage, story page, all stories, topic pages, About, sitemap.xml and robots.txt. |
-| `src/styles/global.css` | Colors, fonts and layout. |
+| Folder                  | What's inside                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------- |
+| `content/`              | The stories (JSON) and brand settings. Moves to Appwrite later.                                |
+| `public/media/`         | Images. Moves to Appwrite Storage later.                                                       |
+| `src/core/`             | The rules: story order, topics, timeline, SEO data, sitemap, story checks. Fully tested.       |
+| `src/adapters/`         | Where stories come from. Today `json-files.ts`; an Appwrite version gets added later.          |
+| `src/site-data.ts`      | The one place pages get their data from. Switching to Appwrite changes one line here.          |
+| `src/components/`       | Reusable pieces: story card, timeline, Then vs now box, follow buttons, ad slot, video player. |
+| `src/pages/`            | Homepage, story page, all stories, topic pages, About, sitemap.xml and robots.txt.             |
+| `src/styles/global.css` | Colors, fonts and layout.                                                                      |
 
 The site is built with [Astro](https://astro.build) and renders each page on the server when it's requested (SSR). That means Google gets the full page, and new stories show up without rebuilding, which is how it will work with Appwrite too.
 
@@ -92,3 +95,18 @@ npm start
 ```
 
 Then open http://localhost:4321. Before going online, set your real address: copy `.env.example` to `.env` and change `SITE_URL` (used for the sitemap and SEO links).
+
+## For developers (you can skip this)
+
+The project follows the [claude-scaffolding](https://github.com/blockchaincavs/claude-scaffolding) setup. None of it is needed to run the site.
+
+```
+npm run tests          # Jest tests with coverage (100% required for src/core/)
+npm run typecheck      # TypeScript and Astro checks
+npm run lint           # ESLint, including the "keep src/core pure" rules
+npm run format         # Prettier
+```
+
+- `AGENTS.md` (loaded through `CLAUDE.md`) holds the standing rules for Claude Code. `ARCHITECTURE.md` explains where files go.
+- `.claude/` has the shared Claude Code settings, a hook that runs the tests after every Claude turn, and the `draft-milestone` and `finish-milestone` skills.
+- `plans/` holds the roadmap and milestone plans; `doc/` holds the requirements and the architecture diagram.

@@ -3,9 +3,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import { getSite, getAllStories, getTopics } from '../../lib/stories.js';
+import { loadSiteData } from '../../site-data';
 
-const [site, stories, topics] = await Promise.all([getSite(), getAllStories(), getTopics()]);
+const { site, stories, topics } = await loadSiteData();
 ---
 <BaseLayout site={site} topics={topics} title="All stories" description={`Every ${site.name} story: fact-checked American and economic history, newest first.`}>
   <header class="page-head">

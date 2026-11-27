@@ -1,6 +1,11 @@
 ---
 // Story hero: the YouTube video if the story has one, otherwise the cover image.
 // The video loads only when the reader presses play (keeps the page fast).
+import type { Story } from '../core/types';
+
+interface Props {
+  story: Story;
+}
 const { story } = Astro.props;
 const id = story.links?.youtubeVideoId;
 const minutes = story.links?.videoMinutes;
@@ -22,12 +27,14 @@ const minutes = story.links?.videoMinutes;
 </figure>
 
 <script>
+  import { youtubeEmbedUrl } from '../core/format';
+
   // Swap the cover for the YouTube player when "play" is pressed.
-  document.querySelectorAll('.hero__frame[data-youtube-id]').forEach((frame) => {
+  document.querySelectorAll<HTMLElement>('.hero__frame[data-youtube-id]').forEach((frame) => {
     const button = frame.querySelector('.hero__play');
     button?.addEventListener('click', () => {
       const iframe = document.createElement('iframe');
-      iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(frame.dataset.youtubeId)}?autoplay=1&rel=0`;
+      iframe.src = youtubeEmbedUrl(frame.dataset.youtubeId ?? '');
       iframe.title = 'YouTube video player';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
       iframe.allowFullscreen = true;

@@ -6,23 +6,16 @@ import Timeline from '../components/Timeline.astro';
 import FollowButtons from '../components/FollowButtons.astro';
 import ShortCard from '../components/ShortCard.astro';
 import AdSlot from '../components/AdSlot.astro';
-import { getSite, getAllStories, getTopics, getTimeline } from '../lib/stories.js';
-import { pickLead } from '../lib/format.js';
-import { homeJsonLd } from '../lib/seo.js';
+import { loadSiteData } from '../site-data';
+import { pickLead, shortsRow } from '../core/stories';
+import { homeJsonLd } from '../core/seo';
 
-const [site, stories, topics, timeline] = await Promise.all([getSite(), getAllStories(), getTopics(), getTimeline()]);
+const { site, stories, topics, timeline } = await loadSiteData();
 const lead = pickLead(stories);
 const others = stories.filter((s) => s !== lead);
-
-// Up to 4 Short covers, taking one from each story in turn.
-const shorts = [];
-for (let round = 0; shorts.length < 4 && round < 10; round++) {
-  for (const s of stories) {
-    if (shorts.length < 4 && s.shorts?.[round]) shorts.push({ short: s.shorts[round], story: s });
-  }
-}
+const shorts = shortsRow(stories, 4);
 ---
-<BaseLayout masthead site={site} topics={topics} description={site.description} jsonLd={homeJsonLd(site, Astro.site)}>
+<BaseLayout masthead site={site} topics={topics} description={site.description} jsonLd={homeJsonLd(site, Astro.site ?? Astro.url)}>
   {lead && (
     <div class="front">
       <div class="front__lead"><StoryCard story={lead} variant="lead" headingLevel={2} /></div>

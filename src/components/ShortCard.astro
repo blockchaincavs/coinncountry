@@ -1,5 +1,11 @@
 ---
 // A 9:16 Short cover that links to the full story (or to the Short on YouTube once it has an ID).
+import type { ShortVideo, Story } from '../core/types';
+
+interface Props {
+  short: ShortVideo;
+  story: Story;
+}
 const { short, story } = Astro.props;
 const href = `/stories/${story.slug}`;
 ---

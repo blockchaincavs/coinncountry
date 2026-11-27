@@ -25,12 +25,8 @@
   "shorts": [
     { "title": "Title of a Short", "cover": "/media/my-new-story/short01.jpg", "youtubeId": "" }
   ],
-  "keyFacts": [
-    "One plain, checked fact per line."
-  ],
-  "timeline": [
-    { "year": 1900, "label": "What happened that year", "home": true, "image": "" }
-  ],
+  "keyFacts": ["One plain, checked fact per line."],
+  "timeline": [{ "year": 1900, "label": "What happened that year", "home": true, "image": "" }],
   "chapters": [
     {
       "id": "first-chapter",
@@ -48,6 +44,10 @@
   ],
   "yourTake": "",
   "sources": [
-    { "title": "Article title", "publisher": "Who published it", "url": "https://example.com/article" }
+    {
+      "title": "Article title",
+      "publisher": "Who published it",
+      "url": "https://example.com/article"
+    }
   ]
 }

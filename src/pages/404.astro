@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getSite, getTopics } from '../lib/stories.js';
-const [site, topics] = await Promise.all([getSite(), getTopics()]);
+import { loadSiteData } from '../site-data';
+const { site, topics } = await loadSiteData();
 Astro.response.status = 404;
 ---
 <BaseLayout site={site} topics={topics} title="Page not found" description="This page doesn't exist." noindex>
