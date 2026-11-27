@@ -1,0 +1,177 @@
+{
+  "slug": "ponzi-61-dollars",
+  "status": "published",
+  "title": "Charles Ponzi took in $15 million and held $61",
+  "seoTitle": "The Original Ponzi Scheme: $15 Million In, $61 Left",
+  "description": "In 1920 Charles Ponzi promised 50% profit in 45 days on postal coupons. About 40,000 people bought in. Auditors found $61 worth of coupons. The sourced story.",
+  "dek": "He promised 50% profit in 45 days from a postal loophole. The loophole was real. The trading wasn't.",
+  "summary": "In 1920, an Italian immigrant in Boston promised investors 50% profit in 45 days by trading international postal coupons. About 40,000 people bought in, and he took in an estimated $15 million in eight months. When the scheme fell apart, his coupons were worth $61.",
+  "topic": {
+    "name": "Frauds & Cons",
+    "slug": "frauds-and-cons"
+  },
+  "publishedAt": "2026-11-27",
+  "updatedAt": "2026-11-27",
+  "factCheckedAt": "2026-11-27",
+  "note": "This story is history, not investment advice.",
+  "cover": {
+    "src": "/media/ponzi-61-dollars/cover.jpg",
+    "alt": "Illustration of a large red $61 with the words in postal coupons, on a cream sunburst background",
+    "credit": "Original illustration by CoinNCountry"
+  },
+  "links": {
+    "youtubeVideoId": "",
+    "videoMinutes": 0,
+    "xPostUrl": ""
+  },
+  "shorts": [
+    {
+      "title": "He took $15 million and held $61",
+      "cover": "/media/ponzi-61-dollars/short01.jpg",
+      "youtubeId": ""
+    }
+  ],
+  "keyFacts": [
+    "Charles Ponzi arrived in Boston in November 1903 with $2.50, according to his own account.",
+    "His Securities Exchange Company promised 50% profit in 45 days from trading international postal reply coupons.",
+    "Some 40,000 people invested an estimated $15 million in eight months in 1920.",
+    "Early investors were paid with newer investors' money. When the scheme collapsed, he held $61 worth of postal coupons.",
+    "He pleaded guilty to federal mail fraud on November 30, 1920, was deported to Italy in 1934 and died in Rio de Janeiro in 1949."
+  ],
+  "timeline": [
+    {
+      "year": 1920,
+      "label": "Ponzi's coupon scheme collapses",
+      "home": true
+    }
+  ],
+  "chapters": [
+    {
+      "id": "arrival",
+      "title": "Off the boat with $2.50",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On November 15, 1903, a young Italian named Charles Ponzi stepped off the SS Vancouver into Boston Harbor. By his own telling, he had $2.50 in his pocket. He later claimed he came from a well-to-do family in Italy."
+        },
+        {
+          "type": "p",
+          "text": "The next fifteen years were not a straight line up. He drifted through jobs, landed in a Canadian prison for forging checks while working at a failing bank in Montreal, and then served time in a federal prison in Atlanta for smuggling Italian immigrants across the border from Canada."
+        },
+        {
+          "type": "p",
+          "text": "By 1918 he was back in Boston and married to Rose Gnecco. He wanted to go into business, but when he asked the Hanover Trust Company for a loan of about $2,000, the bank turned him down. Remember that bank. It shows up again at the end."
+        }
+      ]
+    },
+    {
+      "id": "coupon",
+      "title": "The loophole in the mail",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In August 1919, a letter arrived from a business contact in Spain. Inside was an international postal reply coupon, a slip you could buy in one country and trade in another for a stamp, so a pen pal abroad could mail you a reply for free."
+        },
+        {
+          "type": "p",
+          "text": "The coupon had cost 30 centavos in Spain, and in the United States it could be swapped for a 5-cent stamp. After World War I, European currencies had fallen, so a coupon bought cheaply abroad was worth more when redeemed here. Ponzi saw an arbitrage: buy low in Europe, redeem high in America."
+        },
+        {
+          "type": "p",
+          "text": "On paper, it worked. In practice, there was no way to do it at scale. You can't turn a mountain of stamps back into cash, and nobody could buy coupons by the million. That didn't matter, because Ponzi never really tried."
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "title": "50% in 45 days",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "He opened the Securities Exchange Company at 27 School Street in Boston. The first promise was 50% profit in 90 days. Soon it was 50% in 45 days. Agents who brought in investors earned a 10% commission, and their sub-agents 5%."
+        },
+        {
+          "type": "p",
+          "text": "Early investors really did get paid, so they told their friends. Money poured in. By mid-July 1920, it was arriving at up to $250,000 a day. All told, some 40,000 people handed over an estimated $15 million in eight months."
+        },
+        {
+          "type": "p",
+          "text": "The returns weren't coming from coupons. They came from the newer investors' cash. That's the whole trick, and it now carries his name."
+        },
+        {
+          "type": "quote",
+          "text": "The loophole was real. The trading wasn't."
+        }
+      ]
+    },
+    {
+      "id": "collapse",
+      "title": "The Boston Post starts digging",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On July 24, 1920, the Boston Post ran a feature on the man who \"doubles the money within three months.\" Two days later, Ponzi offered to open his books to the authorities and stop taking new money while they looked. That set off a run, as investors lined up to cash out."
+        },
+        {
+          "type": "p",
+          "text": "On August 2, the Post published a report by William McMasters, a former publicity agent for Ponzi, calling him \"hopelessly insolvent.\" On August 9, the Massachusetts bank commissioner told the Hanover Trust to stop honoring Ponzi's checks. On August 11, the Post revealed his prison record in Canada. Ponzi was arrested the next day. The Post's reporting won a Pulitzer Prize."
+        },
+        {
+          "type": "p",
+          "text": "When the books were finally counted, Ponzi's actual holdings of postal coupons came to $61. The auditor's estimate of how deep in the hole he was kept climbing, from $3 million to $7 million. Note holders eventually got back less than 30 cents on the dollar."
+        },
+        {
+          "type": "thenNow",
+          "then": {
+            "label": "Then · 1920",
+            "text": "Returns are paid out of new investors' money, and a newspaper is what finally exposes it."
+          },
+          "now": {
+            "label": "Now",
+            "text": "\"Ponzi scheme\" is the standard name for any fraud that pays old investors with new investors' money."
+          }
+        }
+      ]
+    },
+    {
+      "id": "after",
+      "title": "Prison, Florida, and Rio",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the fall of 1920, Ponzi was indicted in state court on larceny charges and in federal court on mail fraud. On November 30, 1920, he pleaded guilty to one federal charge and was sentenced to five years. He served about three and a half, then faced Massachusetts, which sent him back to prison for seven to nine years in 1925."
+        },
+        {
+          "type": "p",
+          "text": "In between, he tried again: a Florida land scheme. He jumped bail, fled to Texas, signed on to an Italian freighter, and was caught in New Orleans."
+        },
+        {
+          "type": "p",
+          "text": "On October 7, 1934, after his release, the United States deported him to Italy. His wife, Rose, who had lent him money along with her relatives, divorced him. He died in a charity hospital in Rio de Janeiro on January 18, 1949, leaving $75 for his burial."
+        },
+        {
+          "type": "p",
+          "text": "Maybe the strangest part is that the coupon idea wasn't a lie at all. It just couldn't make anyone rich, so he skipped it and kept the promise."
+        }
+      ]
+    }
+  ],
+  "yourTake": "",
+  "sources": [
+    {
+      "title": "In Ponzi We Trust",
+      "publisher": "Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/history/in-ponzi-we-trust-64016168/"
+    },
+    {
+      "title": "Ponzi Scheme",
+      "publisher": "Smithsonian National Postal Museum",
+      "url": "https://postalmuseum.si.edu/exhibition/behind-the-badge-case-histories-scams-and-schemes/ponzi-scheme"
+    },
+    {
+      "title": "Nov. 30, 1920: Ponzi pleads guilty",
+      "publisher": "ABA Journal",
+      "url": "https://www.abajournal.com/magazine/article/on-nov-30-1920-ponzi-was-indicted-by-suffolk-county-on-22-counts-of-larceny"
+    }
+  ]
+}
